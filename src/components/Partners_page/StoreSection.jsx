@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./style/Header.css";
 import search from "./img/header_img/icons8-search.svg";
 import CardItem from "./CardItem";
 import { ProductContext } from "../../contexts/ProductContextProvider";
+import { productContext } from "../../context/ProductContextProvider";
 
 const StoreSection = () => {
-  const { products } = useContext(ProductContext);
+  const { products } = useContext(productContext);
+
   console.log(products);
 
   return (

@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { createContext, useContext, useReducer } from "react";
+import React, { createContext, useContext, useEffect, useReducer } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ACTIONS, JSON_API_PRODUCTS } from "../helpers/const";
 
@@ -36,11 +36,15 @@ const ProductContextProvider = ({ children }) => {
       `${JSON_API_PRODUCTS}${window.location.search}`
     );
 
+    console.log(data);
+
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };
 
   const addProduct = async (newProduct) => {
+    console.log(newProduct);
     await axios.post(JSON_API_PRODUCTS, newProduct);
+    getProducts();
     navigate("/products");
   };
 
@@ -82,6 +86,10 @@ const ProductContextProvider = ({ children }) => {
     console.log(url);
     navigate(url);
   };
+
+  useEffect(() => {
+    getProducts();
+  }, []);
 
   const values = {
     addProduct,
