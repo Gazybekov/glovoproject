@@ -3,7 +3,7 @@ import "./style/Header.css";
 import topBannerBackground from "./img/header_img/top-banner-background.svg";
 import arrow from "./img/header_img/white-arrow-png-41944.png";
 import scooter from "./img/header_img/scooter-1050.svg";
-import Cart from "./Cart";
+// import Cart from "./Cart";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
@@ -56,10 +56,11 @@ const Header = () => {
               />
               <span>95%</span>
               <span>Хорошо</span>
+              <span>Хорошо</span>
             </div>
           </div>
         </div>
-        <Cart></Cart>
+        {/* <Cart></Cart> */}
       </div>
     </div>
   );
