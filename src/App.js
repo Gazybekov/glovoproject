@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react'
+import PartnersMain from './components/Partners_page/PartnersMain'
 
 const App = () => {
-  return <div>App</div>;
-};
+  return (
+    <>
+    <PartnersMain/>
+    </>
+  )
+}
 
-export default App;
+export default App
