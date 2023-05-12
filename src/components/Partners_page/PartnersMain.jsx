@@ -10,7 +10,6 @@ const PartnersMain = () => {
       <Header />
       <div className="store-wrapper">
         <StoreSection />
-        <FillterSection></FillterSection>
       </div>
     </div>
   );

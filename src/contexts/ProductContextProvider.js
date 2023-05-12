@@ -1,28 +1,36 @@
 import axios from 'axios';
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { JSON_API_PRODUCTS } from '../helpers/constst';
 
-export const productContext = createContext();
+export const ProductContext = createContext();
+
 export const useProducts = () => {
-  return useContext(productContext)
+  return useContext(ProductContext);
 }
 
-
-
-const ProductContextProvider = ({children}) => {
-  const [products,setProducts] = useState([]);
-  console.log(products);
-
+const ProductContextProvider = ({ children }) => {
+  const [products, setProducts] = useState([]);
 
   const getProducts = async () => {
-    const res = await axios(JSON_API_PRODUCTS);
-    setProducts(res)
+    try {
+      const res = await axios.get(JSON_API_PRODUCTS);
+      setProducts(res.data);
+    } catch (error) {
+      console.error(error);
+    }
   }
-  
-  const values = {getProducts,products}
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+
+  const values = { getProducts, products, setProducts };
+
   return (
-    <productContext.Provider value= {values}>{children}</productContext.Provider>
-  )
+    <ProductContext.Provider value={values}>
+      {children}
+    </ProductContext.Provider>
+  );
 }
 
-export default ProductContextProvider
+export default ProductContextProvider;
