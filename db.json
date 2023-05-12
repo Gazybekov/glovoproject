@@ -1,28 +1,54 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Баскет 10 острых ножек",
-      "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_2.0,h_60,w_60,q_auto:low,b_transparent/Products/ho0pnt2mv37nmko5afjs",
-      "Price": 899
+      "picture": "234",
+      "name": "2345",
+      "price": 2345,
+      "description": "234",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": " Комбо на двоих ",
-      "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_2.0,h_60,w_60,q_auto:low,b_transparent/Products/ltjccnqkn5iay9pvt5tb",
-      "Price": 899
+      "picture": "https://img3.akspic.ru/previews/5/5/4/1/7/171455/171455-zhivopis-illustracia-art-voda-oblako-500x.jpg",
+      "name": "234",
+      "price": 234,
+      "description": "2345",
+      "id": 2
     },
     {
-      "id": 3,
-      "title": " Комбо на двоих ",
-      "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_2.0,h_60,w_60,q_auto:low,b_transparent/Products/ltjccnqkn5iay9pvt5tb",
-      "Price": 899
+      "picture": "3wer",
+      "name": "234",
+      "price": 234,
+      "description": "234",
+      "id": 3
     },
     {
-      "id": 4,
-      "title": " Комбо на двоих ",
-      "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_2.0,h_60,w_60,q_auto:low,b_transparent/Products/ltjccnqkn5iay9pvt5tb",
-      "Price": 899
+      "picture": "2345",
+      "name": "234",
+      "price": 234,
+      "description": "234",
+      "id": 4
+    },
+    {
+      "picture": "45678",
+      "name": "4567ш",
+      "price": 34567,
+      "description": "цукенг",
+      "id": 5
+    },
+    {
+      "picture": "45678",
+      "name": "4567ш",
+      "price": 34567,
+      "description": "цукенг",
+      "id": 6
+    },
+    {
+      "name": "234",
+      "description": "234",
+      "price": 1234,
+      "picture": "1234",
+      "type": "234",
+      "id": 7
     }
   ]
 }
