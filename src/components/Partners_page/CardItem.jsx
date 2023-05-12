@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 import plus from "./img/header_img/plus-new.svg";
 import "./style/Header.css";
 

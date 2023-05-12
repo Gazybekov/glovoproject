@@ -56,6 +56,7 @@ const Header = () => {
               />
               <span>95%</span>
               <span>Хорошо</span>
+              <span>Хорошо</span>
             </div>
           </div>
         </div>
