@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Nav_glovo {
+  background-color: #f6c45d;
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Nav_glovo {
+  background-color: #f6c45d;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_img {
+  padding-top: 50px;
+  width: 20%;
+  padding-left: 120px;
+}
+.nav_button {
+  border: 0;
+  margin-top: 50px;
+  border-radius: 30px;
+  width: 7%;
+  margin-right: 120px;
+  background-color: #479e83;
+  color: white;
+}
+.Nav_glovo input {
+  text-align: center;
+  width: 24%;
+  height: 50px;
+  margin-top: 80px;
+  border-radius: 100px;
+  border: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li img {
+  margin-right: 10px;
+}
+
+.sidebar li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar li a:hover {
+  color: #000;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+}
