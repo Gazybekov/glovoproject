@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "picture": "234",
+      "name": "2345",
+      "price": 2345,
+      "description": "234",
+      "id": 1
+    },
+    {
+      "picture": "https://img3.akspic.ru/previews/5/5/4/1/7/171455/171455-zhivopis-illustracia-art-voda-oblako-500x.jpg",
+      "name": "234",
+      "price": 234,
+      "description": "2345",
+      "id": 2
+    },
+    {
+      "picture": "3wer",
+      "name": "234",
+      "price": 234,
+      "description": "234",
+      "id": 3
+    },
+    {
+      "picture": "2345",
+      "name": "234",
+      "price": 234,
+      "description": "234",
+      "id": 4
+    },
+    {
+      "picture": "45678",
+      "name": "4567ш",
+      "price": 34567,
+      "description": "цукенг",
+      "id": 5
+    },
+    {
+      "picture": "45678",
+      "name": "4567ш",
+      "price": 34567,
+      "description": "цукенг",
+      "id": 6
+    },
+    {
+      "name": "234",
+      "description": "234",
+      "price": 1234,
+      "picture": "1234",
+      "type": "234",
+      "id": 7
+    }
+  ]
+}
