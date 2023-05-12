@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Баскет 10 острых ножек",
+      "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_2.0,h_60,w_60,q_auto:low,b_transparent/Products/ho0pnt2mv37nmko5afjs",
+      "Price": 899
+    },
+    {
+      "id": 2,
+      "title": " Комбо на двоих ",
+      "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_2.0,h_60,w_60,q_auto:low,b_transparent/Products/ltjccnqkn5iay9pvt5tb",
+      "Price": 899
+    }
+  ]
+}
