@@ -1,28 +1,18 @@
-import * as React from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import { useCart } from "../../contexts/CartContextProvider";
-import { Button } from "@mui/material";
+import React from "react";
+import "../Partners_page/style/Header.css";
+import { useCart } from "../../context/CartContextProvider";
+import plus from "../Partners_page/img/header_img/plus-new.svg";
+import minus from "../Partners_page/img/header_img/minus.svg";
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
-];
-
-export default function Cart() {
-  const { getCart, cart, changeProductCount, deleteCartProduct } = useCart();
+export default function CartFull({ item }) {
+  console.log(item);
+  const {
+    getCart,
+    cart,
+    changeProductCount,
+    deleteCartProduct,
+    addProductToCart,
+  } = useCart();
 
   console.log(cart);
   React.useEffect(() => {
@@ -35,42 +25,26 @@ export default function Cart() {
   };
 
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableBody>
-          {cart?.products.map((row) => (
-            <TableRow
-              key={row.item.id}
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
-                <img src={row.item.picture} width="70" height="70" alt="" />
-              </TableCell>
-              <TableCell align="right">{row.item.name}</TableCell>
-              <TableCell align="right">{row.item.type}</TableCell>
-              <TableCell align="right">{row.item.description}</TableCell>
-              <TableCell align="right">{row.item.price}</TableCell>
-              <TableCell align="right">
-                <input
-                  type="number"
-                  onChange={(e) =>
-                    changeProductCount(e.target.value, row.item.id)
-                  }
-                  value={row.count}
-                  min={1}
-                />
-              </TableCell>
-              <TableCell align="right">{row.subPrice}</TableCell>
-              <TableCell align="right">
-                <button onClick={() => deleteCartProduct(row.item.id)}>
-                  DELETE
-                </button>
-              </TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      <Button onClick={cartCleaner}> BUY NOW FOR {cart?.totalPrice} $</Button>
-    </TableContainer>
+    <div className="cart-section_full">
+      <div className="cart-header">
+        <h2>Ваш заказ</h2>
+      </div>
+      <div className="box-fullcart">
+        <div className="cart-textbox">
+          <p>1x</p>
+          <p>name</p>
+          <span>price</span>
+        </div>
+        <div className="btn_cart">
+          <button onClick={() => addProductToCart(item)}>
+            <img src={minus} alt="" />
+          </button>
+          <button onClick={() => addProductToCart(item)}>
+            <img src={plus} alt="" />
+          </button>
+        </div>
+        <button>Заказать продукты (3) за цена</button>
+      </div>
+    </div>
   );
 }

@@ -3,6 +3,7 @@ import "./style/Header.css";
 import search from "./img/header_img/icons8-search.svg";
 import CardItem from "./CardItem";
 import { productContext } from "../../context/ProductContextProvider";
+import CartFull from "../Cart/CartFull";
 
 const StoreSection = () => {
   const { products } = useContext(productContext);
@@ -27,6 +28,7 @@ const StoreSection = () => {
           <p>No products available</p>
         )}
       </div>
+      <CartFull></CartFull>
     </div>
   );
 };

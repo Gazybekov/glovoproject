@@ -14,7 +14,7 @@ const CardItem = ({ item }) => {
         </div>
       </div>
       <div className="price">
-        <span>{item.price}</span>
+        <span>{item.price},00 KGS</span>
         <button onClick={() => addProductToCart(item)}>
           <img src={plus} alt="" />
         </button>

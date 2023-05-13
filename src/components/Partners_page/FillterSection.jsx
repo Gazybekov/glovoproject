@@ -22,8 +22,8 @@ const FillterSection = () => {
       </div>
       <ul>
         {arr.map((item, index) => (
-          <div>
-            <li key={index}>{item}</li>
+          <div key={index}>
+            <li>{item}</li>
           </div>
         ))}
       </ul>
