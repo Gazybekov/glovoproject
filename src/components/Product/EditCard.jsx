@@ -1,16 +1,25 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
+
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { useProducts } from "../../context/ProductContextProvider";
 
-const AddProduct = () => {
-  const { addProduct } = useProducts();
-  const [product, setProduct] = useState({
-    image: "",
-    name: "",
-    price: 0,
-    description: "",
-    category: "",
-  });
+const EditCard = () => {
+  const { saveEditedProduct, getProductDetails, productDetails } =
+    useProducts();
+  console.log(productDetails);
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    getProductDetails(id);
+  }, []);
+
+  useEffect(() => {
+    setProduct(productDetails);
+  }, [productDetails]);
+
+  const [product, setProduct] = useState(productDetails);
 
   const handleInp = (e) => {
     if (e.target.name === "price") {
@@ -27,10 +36,11 @@ const AddProduct = () => {
       setProduct(obj);
     }
   };
+
   return (
     <>
-      <Box sx={{ width: "30vw", margin: "10vh auto", textAlign: "center" }}>
-        <Typography variant="h4">Новый продукт</Typography>
+      <Box sx={{ width: "60vw", margin: "10vh auto", textAlign: "center" }}>
+        <Typography variant="h4">Изменения продукта</Typography>
         <TextField
           sx={{ marginBottom: "10px" }}
           fullWidth
@@ -40,6 +50,7 @@ const AddProduct = () => {
           size="small"
           name="image"
           onChange={handleInp}
+          value={product.image || ""}
         />
         <TextField
           sx={{ marginBottom: "10px" }}
@@ -50,7 +61,9 @@ const AddProduct = () => {
           size="small"
           name="name"
           onChange={handleInp}
+          value={product.name || ""}
         />
+
         <TextField
           sx={{ marginBottom: "10px" }}
           fullWidth
@@ -60,6 +73,7 @@ const AddProduct = () => {
           size="small"
           name="price"
           onChange={handleInp}
+          value={product.price || ""}
         />
         <TextField
           sx={{ marginBottom: "10px" }}
@@ -70,28 +84,19 @@ const AddProduct = () => {
           size="small"
           name="description"
           onChange={handleInp}
-        />
-        <TextField
-          sx={{ marginBottom: "10px" }}
-          fullWidth
-          id="outlined-basic"
-          label="category"
-          variant="outlined"
-          size="small"
-          name="category"
-          onChange={handleInp}
+          value={product.description || ""}
         />
 
         <Button
-          onClick={() => addProduct(product)}
+          onClick={() => saveEditedProduct(product)}
           fullWidth
           variant="outlined"
         >
-          Добавить новый продукт
+          Save Changes
         </Button>
       </Box>
     </>
   );
 };
 
-export default AddProduct;
+export default EditCard;
