@@ -10,6 +10,7 @@ const AddProduct = () => {
     price: 0,
     description: "",
   });
+
   const handleInp = (e) => {
     if (e.target.name === "price") {
       let obj = {
