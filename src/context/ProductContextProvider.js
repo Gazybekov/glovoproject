@@ -14,6 +14,7 @@ const INIT_STATE = {
   productDetails: {},
 };
 
+
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
     case ACTIONS.GET_PRODUCTS:
@@ -30,13 +31,14 @@ const reducer = (state = INIT_STATE, action) => {
 const ProductContextProvider = ({ children }) => {
   const navigate = useNavigate();
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
+  // console.log(state);
 
   const getProducts = async () => {
     const { data } = await axios(
       `${JSON_API_PRODUCTS}${window.location.search}`
     );
 
-    console.log(data);
+    // console.log(data);
 
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };

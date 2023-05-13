@@ -2,13 +2,11 @@ import React, { useContext, useEffect } from "react";
 import "./style/Header.css";
 import search from "./img/header_img/icons8-search.svg";
 import CardItem from "./CardItem";
-import { ProductContext } from "../../contexts/ProductContextProvider";
 import { productContext } from "../../context/ProductContextProvider";
+import CartFull from "../Cart/CartFull";
 
 const StoreSection = () => {
   const { products } = useContext(productContext);
-
-  console.log(products);
 
   return (
     <div className="store-section">
@@ -22,11 +20,15 @@ const StoreSection = () => {
           />
         </div>
       </div>
-      {products && products.length > 0 ? (
-        products.map((item) => <CardItem key={item.id} item={item} />)
-      ) : (
-        <p>No products available</p>
-      )}
+      <h3>Самое популярное</h3>
+      <div className="box_propducts">
+        {products && products.length > 0 ? (
+          products.map((item) => <CardItem key={item.id} item={item} />)
+        ) : (
+          <p>No products available</p>
+        )}
+      </div>
+      <CartFull></CartFull>
     </div>
   );
 };
