@@ -40,6 +40,13 @@ export default function CartFull() {
 
     changeProductCount(updatedCount, item.item.id, updatedSubPrice);
   };
+  const getTotalProductCount = (products) => {
+    let totalCount = 0;
+    products.forEach((item) => {
+      totalCount += item.count;
+    });
+    return totalCount;
+  };
 
   return (
     <div className="cart-section_full">
@@ -65,8 +72,8 @@ export default function CartFull() {
           </div>
         ))}
         <button className="buybtn">
-          Заказать продукты ({cart.products.length}) за&nbsp;
-          {/* {cart?.totalPrice} */} {calcTotalPrice(cart.products)} KGS
+          Заказать продукты ({getTotalProductCount(cart.products)}) за&nbsp;
+          {calcTotalPrice(cart.products)} KGS
         </button>
       </div>
     </div>
