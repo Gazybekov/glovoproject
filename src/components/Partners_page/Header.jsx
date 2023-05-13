@@ -4,6 +4,7 @@ import topBannerBackground from "./img/header_img/top-banner-background.svg";
 import arrow from "./img/header_img/white-arrow-png-41944.png";
 import scooter from "./img/header_img/scooter-1050.svg";
 import { Link } from "react-router-dom";
+import Cart from "../Cart/Cart";
 
 const Header = () => {
   return (

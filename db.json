@@ -1,70 +1,6 @@
 {
   "products": [
     {
-      "picture": "234",
-      "name": "2345",
-      "price": 2345,
-      "description": "234",
-      "id": 1
-    },
-    {
-      "picture": "https://img3.akspic.ru/previews/5/5/4/1/7/171455/171455-zhivopis-illustracia-art-voda-oblako-500x.jpg",
-      "name": "234",
-      "price": 234,
-      "description": "2345",
-      "id": 2
-    },
-    {
-      "picture": "3wer",
-      "name": "234",
-      "price": 234,
-      "description": "234",
-      "id": 3
-    },
-    {
-      "picture": "2345",
-      "name": "234",
-      "price": 234,
-      "description": "234",
-      "id": 4
-    },
-    {
-      "picture": "45678",
-      "name": "4567ш",
-      "price": 34567,
-      "description": "цукенг",
-      "id": 5
-    },
-    {
-      "picture": "45678",
-      "name": "4567ш",
-      "price": 34567,
-      "description": "цукенг",
-      "id": 6
-    },
-    {
-      "name": "234",
-      "description": "234",
-      "price": 1234,
-      "picture": "1234",
-      "type": "234",
-      "id": 7
-    },
-    {
-      "picture": "aef",
-      "name": "aeg",
-      "price": 46,
-      "description": "ewsargf",
-      "id": 8
-    },
-    {
-      "picture": "hgvjhbk",
-      "name": "af",
-      "price": null,
-      "description": "srg",
-      "id": 9
-    },
-    {
       "title": "Баскет L 26 крыльев",
       "price": "1 199,00 KGS",
       "description": "26 острых крыльев",
@@ -134,7 +70,7 @@
       "description": "Kуриные ножки в острой панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/xfulgcw4hiooottitnto",
       "category": "Basket",
-      "id": 18
+      "id": 6
     },
     {
       "title": "Сандерс Баскет Острый",
@@ -206,7 +142,7 @@
       "description": "Острые куриные крылья в хрустящей панировке со жгучими специями.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/tkpqsf4ec4xnk3zpsfhl",
       "category": "Chiken",
-      "id": 25
+      "id": 5
     },
     {
       "title": "5 острых крыльев",
@@ -310,7 +246,7 @@
       "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ojkzlbywmcdzwkmmfdfv",
       "category": "Chiken",
-      "id": 37
+      "id": 3
     },
     {
       "title": "3 острых стрипса",
@@ -318,7 +254,7 @@
       "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/wg2qae85yd8vigli1qsb",
       "category": "Chiken",
-      "id": 38
+      "id": 2
     },
     {
       "title": "Боксмастер Оригинальный",
@@ -462,7 +398,7 @@
       "description": "Сырная лепешка, сочные байтсы из куриного филе в панировке, горчица, кетчуп, сыр, маринованные огурчики и лук.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/lekfnn94miroulszzsaa",
       "category": "Sandwich",
-      "id": 55
+      "id": 1
     },
     {
       "title": "Баскет фри",
@@ -605,56 +541,49 @@
       "price": "39,00 KGS",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/y9q5b06sagwonnn4usmx",
       "category": "Other",
-      "id": 71
+      "id": 72
     },
     {
       "title": "Соус кисло-сладкий Чили",
       "price": "34,00 KGS",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jzp5srdizhqjgpkwf85e",
       "category": "Other",
-      "id": 72
+      "id": 73
     },
     {
       "title": "Соус чесночный",
       "price": "34,00 KGS",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/rfqmm0a0znoatjto3gc5",
       "category": "Other",
-      "id": 73
+      "id": 74
     },
     {
       "title": "Соус сырный",
       "price": "34,00 KGS",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/pj0bvepu37wpn3hhahwv",
       "category": "Other",
-      "id": 74
+      "id": 75
     },
     {
       "title": "Соус Барбекю",
       "price": "34,00 KGS",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/kttkrw4gogvokb797clm",
       "category": "Other",
-      "id": 75
+      "id": 76
     },
     {
       "title": "Соус терияки",
       "price": "34,00 KGS",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/skjlawoti59e2qkimjar",
       "category": "Other",
-      "id": 76
+      "id": 77
     },
     {
       "title": "Кетчуп",
       "price": "34,00 KGS",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vojdxh6x2kdubowpyrk1",
       "category": "Other",
-      "id": 76
-    },
-    {
-      "title": "Булочка",
-      "price": "29,00 KGS",
-      "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/c0kkegnb6gfddsjwsztd",
-      "category": "Other",
-      "id": 77
+      "id": 78
     }
   ]
 }
