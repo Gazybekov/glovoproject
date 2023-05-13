@@ -6,7 +6,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.con1 {
+  margin-left: 80px;
+}
+.con2 {
+  margin-right: 80px;
+}
 .Nav_glovo {
   background-color: #f6c45d;
   display: flex;
@@ -32,7 +37,7 @@
   text-align: center;
 }
 .nav2_h1 {
-  font-size: 60px;
+  font-size: 45px;
   font-family: "Signika Negative", sans-serif;
 }
 .nav2_input {
@@ -51,8 +56,9 @@
 .Nav_glovo3 {
   background-color: #f6c45d;
   display: flex;
+  justify-content: space-between;
   padding-top: 80px;
-  justify-content: space-around;
+  height: 320px;
   font-family: "Libre Baskerville", serif;
 }
 .Nav_glovo3 img {
@@ -63,7 +69,9 @@
 .Nav_glovo3 div {
   display: flex;
   flex-direction: column;
+  width: 90px;
 }
+
 .Nav_glovo3 button {
   border: 0;
   background-color: #f6c45d;

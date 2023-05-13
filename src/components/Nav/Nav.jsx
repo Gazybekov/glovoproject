@@ -1,17 +1,78 @@
 import { height } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import glovo from "../../assets/glovo.svg";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
+  const [password, setPassword] = useState("");
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  const handleEdit = () => {
+    console.log(`Имя: ${name}\nАдрес: ${address}\nПароль: ${password}`);
+    closeModal();
+  };
   return (
     <>
       <div className="Nav_glovo">
         <img className="nav_img" src={glovo} alt="" />
-        <button className="nav_button">Начать!</button>
+        <button className="nav_button" onClick={openModal}>
+          Начать!
+        </button>
       </div>
+      {/* ----------------- */}
+      {isModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            {/* Форма регистрации */}
+            <form>
+              {/* Поле ввода имени */}
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Имя"
+              />
+              {/* Поле ввода адреса */}
+              <input
+                type="text"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+                placeholder="Адрес"
+              />
+              {/* Поле ввода пароля */}
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Пароль"
+              />
+              {/* Кнопка Edit */}
+              <button type="button" onClick={handleEdit}>
+                Edit
+              </button>
+            </form>
+
+            {/* Кнопка закрытия модального окна */}
+            <button className="close-button" onClick={closeModal}>
+              Закрыть
+            </button>
+          </div>
+        </div>
+      )}
+      {/* ---------------------- */}
       <div className="Nav_glovo2">
-        <h1 className="nav2_h1">Доставка в городе Бишкек</h1>
+        <h3 className="nav2_h1">Доставка в городе Бишкек</h3>
         <input
           className="nav2_input"
           type="text"
@@ -20,7 +81,7 @@ const Nav = () => {
         <button className="nav2_button">Найти на карте!</button>
       </div>
       <div className="Nav_glovo3">
-        <div>
+        <div className="con1">
           <img
             src="https://res.cloudinary.com/glovoapp/c_fit,f_auto,e_trim,q_auto:best,h_120,w_120/StoreCategories/prj0mlcuvmymzfh8pqjz"
             alt=""
@@ -77,7 +138,7 @@ const Nav = () => {
             Майские <br /> Праздники
           </button>
         </div>
-        <div>
+        <div className="con2">
           <img
             src="https://res.cloudinary.com/glovoapp/c_fit,f_auto,e_trim,q_auto:best,h_120,w_120/CategoryGroups/gvzyon4wmct0wn9caj6w"
             alt=""
@@ -86,6 +147,8 @@ const Nav = () => {
             магазины и <br /> подарки
           </button>
         </div>
+
+        {/*  */}
       </div>
       <div className="Content">
         <div className="content_we">
@@ -278,7 +341,9 @@ const Nav = () => {
           <h1>Популярные Категории в г. Бишкек</h1>
         </div>
         <div className="dom_button">
-          <button>Бургеры</button>
+          <Link to="/burgers">
+            <button>Бургеры</button>
+          </Link>
           <button>Халяльная</button>
           <button>Курица</button>
           <button>Восточная</button>
