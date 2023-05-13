@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Partners_page/style/Header.css";
 import { useCart } from "../../context/CartContextProvider";
 import pluss from "../Partners_page/img/header_img/plus-new.svg";

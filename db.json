@@ -2,7 +2,7 @@
   "products": [
     {
       "name": "Баскет L 26 крыльев",
-      "price": 1199,
+      "price": 1399,
       "description": "26 острых крыльев",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jbz4kwfvwhztjjkkbv5z",
       "category": "Basket",
@@ -584,6 +584,7 @@
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vojdxh6x2kdubowpyrk1",
       "category": "Other",
       "id": 78
+<<<<<<< HEAD
     },
     {
       "picture": "sdg",
@@ -608,6 +609,8 @@
       "description": "es",
       "category": "Other",
       "id": 81
+=======
+>>>>>>> 3d37f1898e990f28e75f18c8eb92d379d30c6279
     }
   ]
 }
