@@ -46,10 +46,8 @@ const Header = () => {
             <div className="scooter_section">
               <img src={scooter} alt="" />
               <p>80,00 KGS</p>
-              <Link to={"/products"}>
-                <button>Добавить новый продукт</button>
-              </Link>
             </div>
+
             <div className="rate_section">
               <img
                 src="https://res.cloudinary.com/glovoapp/f_auto,q_auto:low/store_ratings/rating_good.png"
@@ -57,8 +55,10 @@ const Header = () => {
               />
               <span>95%</span>
               <span>Хорошо</span>
-              <span>Хорошо</span>
             </div>
+            <Link to={"/products"}>
+              <button>Добавить новый продукт</button>
+            </Link>
           </div>
         </div>
       </div>

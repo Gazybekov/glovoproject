@@ -1,11 +1,11 @@
 import React from "react";
 import "../Partners_page/style/Header.css";
 import { useCart } from "../../context/CartContextProvider";
-import plus from "../Partners_page/img/header_img/plus-new.svg";
+import pluss from "../Partners_page/img/header_img/plus-new.svg";
 import minus from "../Partners_page/img/header_img/minus.svg";
+import { calcTotalPrice } from "../../helpers/function";
 
-export default function CartFull({ item }) {
-  console.log(item);
+export default function CartFull() {
   const {
     getCart,
     cart,
@@ -13,8 +13,8 @@ export default function CartFull({ item }) {
     deleteCartProduct,
     addProductToCart,
   } = useCart();
-
   console.log(cart);
+
   React.useEffect(() => {
     getCart();
   }, []);
@@ -24,26 +24,50 @@ export default function CartFull({ item }) {
     getCart();
   };
 
+  const handleDecrease = (item) => {
+    if (item.count > 1) {
+      const updatedCount = item.count - 1;
+      const updatedSubPrice = updatedCount * item.item.price;
+      changeProductCount(updatedCount, item.item.id, updatedSubPrice);
+    } else {
+      deleteCartProduct(item.item.id);
+    }
+  };
+
+  const handleIncrease = (item) => {
+    const updatedCount = item.count + 1;
+    const updatedSubPrice = updatedCount * item.item.price;
+
+    changeProductCount(updatedCount, item.item.id, updatedSubPrice);
+  };
+
   return (
     <div className="cart-section_full">
       <div className="cart-header">
         <h2>Ваш заказ</h2>
       </div>
       <div className="box-fullcart">
-        <div className="cart-textbox">
-          <p>1x</p>
-          <p>name</p>
-          <span>price</span>
-        </div>
-        <div className="btn_cart">
-          <button onClick={() => addProductToCart(item)}>
-            <img src={minus} alt="" />
-          </button>
-          <button onClick={() => addProductToCart(item)}>
-            <img src={plus} alt="" />
-          </button>
-        </div>
-        <button>Заказать продукты (3) за цена</button>
+        {cart.products.map((item) => (
+          <div key={item.item.id}>
+            <div className="cart-textbox">
+              <p>{item.count}X</p>
+              <p>{item.item.name}</p>
+              <span>{item.item.price}</span>
+            </div>
+            <div className="btn_cart">
+              <button onClick={() => handleDecrease(item)}>
+                <img src={minus} alt="" />
+              </button>
+              <button onClick={() => handleIncrease(item)}>
+                <img src={pluss} alt="" />
+              </button>
+            </div>
+          </div>
+        ))}
+        <button className="buybtn">
+          Заказать продукты ({cart.products.length}) за&nbsp;
+          {/* {cart?.totalPrice} */} {calcTotalPrice(cart.products)} KGS
+        </button>
       </div>
     </div>
   );

@@ -28,7 +28,6 @@ const StoreSection = () => {
           <p>No products available</p>
         )}
       </div>
-      <CartFull></CartFull>
     </div>
   );
 };

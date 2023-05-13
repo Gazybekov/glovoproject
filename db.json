@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "title": "Баскет L 26 крыльев",
+      "name": "Баскет L 26 крыльев",
       "price": 1199,
       "description": "26 острых крыльев",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jbz4kwfvwhztjjkkbv5z",
@@ -9,7 +9,7 @@
       "id": 10
     },
     {
-      "title": "Баскет 10 оригинальных ножек",
+      "name": "Баскет 10 оригинальных ножек",
       "price": 899,
       "description": "Баскет 10 оригинальных ножек",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/zo5u2scndxik1y08nmxk",
@@ -17,7 +17,7 @@
       "id": 11
     },
     {
-      "title": "Баскет 10 острых ножек",
+      "name": "Баскет 10 острых ножек",
       "price": 899,
       "description": "Баскет 10 острых ножек",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ho0pnt2mv37nmko5afjs",
@@ -25,7 +25,7 @@
       "id": 12
     },
     {
-      "title": "Баскет М 18 крыльев",
+      "name": "Баскет М 18 крыльев",
       "price": 864,
       "description": "18 острых крыльев",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/qmf4nzppiezvvtnkmeoz",
@@ -33,7 +33,7 @@
       "id": 13
     },
     {
-      "title": "Баскет Дуэт Острый",
+      "name": "Баскет Дуэт Острый",
       "price": 749,
       "description": "Всемирно известные хиты от KFC в нашем Баскете! Сочные кусочки курицы: 2 ножки, 4 куриных крылышка*, 4 стрипса в панировке Hot and Spicy, 1 картофель фри стд.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jldrttiiallquko329d9",
@@ -41,7 +41,7 @@
       "id": 14
     },
     {
-      "title": "Баскет Дуэт Оригинальный",
+      "name": "Баскет Дуэт Оригинальный",
       "price": 749,
       "description": "Всемирно известные хиты от KFC в нашем Баскете! Сочные кусочки курицы: 2 ножки, 4 куриных крылышка*, 4 стрипса в оригинальной панировке, 1 картофель фри стд.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/fpsuoweghrcaywj3qwxq",
@@ -49,7 +49,7 @@
       "id": 15
     },
     {
-      "title": "Острый Баскет",
+      "name": "Острый Баскет",
       "price": 679,
       "description": "4 острых ножек, 6 острых крыльев",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/nypd94qufmignoel025i",
@@ -57,7 +57,7 @@
       "id": 16
     },
     {
-      "title": "Баскет 5 оригинальных ножек",
+      "name": "Баскет 5 оригинальных ножек",
       "price": 464,
       "description": "Баскет 5 оригинальных ножек",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/wbtvc54pvdsko93cavm2",
@@ -65,7 +65,7 @@
       "id": 17
     },
     {
-      "title": "Баскет 5 острых ножек",
+      "name": "Баскет 5 острых ножек",
       "price": 464,
       "description": "Kуриные ножки в острой панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/xfulgcw4hiooottitnto",
@@ -73,7 +73,7 @@
       "id": 6
     },
     {
-      "title": "Сандерс Баскет Острый",
+      "name": "Сандерс Баскет Острый",
       "price": 409,
       "description": "Баскет от Полковника Сандерса! Острая Ножка, 2 крыла, 2 острых стрипса , байтсы 63 г.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/khnxfnadezhechhuslzf",
@@ -81,7 +81,7 @@
       "id": 18
     },
     {
-      "title": "Сандерс Баскет Оригинальный",
+      "name": "Сандерс Баскет Оригинальный",
       "price": 409,
       "description": "Баскет от Полковника Сандерса! Ножка, 2 крыла, 2 стрипса оригинальных или острых , байтсы 63 г.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/hogueqmlhspctneq0qnx",
@@ -89,7 +89,7 @@
       "id": 19
     },
     {
-      "title": "Пати Баскет",
+      "name": "Пати Баскет",
       "price": 199,
       "description": "Попробуй супермегазаводной \"Пати Баскет\" в KFC. Хрустящий аппетитный картофель, 6 кусочков байтс и сырный соус- тебе понравится!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jhhwjrz9k91r3lsgvof4",
@@ -97,7 +97,7 @@
       "id": 20
     },
     {
-      "title": "Снек бокс",
+      "name": "Снек бокс",
       "price": 199,
       "description": "5 оригинальных наггетсов и байтсы стандартные Снек – бокс выбирают настоящие любители курочки!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/cvpoofrxyyqnkxe11c5j",
@@ -105,7 +105,7 @@
       "id": 21
     },
     {
-      "title": "Наггетс Баскет",
+      "name": "Наггетс Баскет",
       "price": 199,
       "description": "5 оригинальных наггетсов и стандартная порция Фри",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/fjbuecyvsdra1cezkkvt",
@@ -113,7 +113,7 @@
       "id": 22
     },
     {
-      "title": "Байтсы (стандартная порция)",
+      "name": "Байтсы (стандартная порция)",
       "price": 139,
       "description": "Cочные кусочки курицы в хрустящей панировке",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/zaqws28xuuusoqotacln",
@@ -121,7 +121,7 @@
       "id": 23
     },
     {
-      "title": "9 Наггетсов",
+      "name": "9 Наггетсов",
       "price": 199,
       "description": "Попробуйте наггетсы от Сандерса! Это сытно и вкусно",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vsiwgpaubu7n6cyttov4",
@@ -129,7 +129,7 @@
       "id": 24
     },
     {
-      "title": "6 Наггетсов",
+      "name": "6 Наггетсов",
       "price": 129,
       "description": "Попробуйте наггетсы от Сандерса! Это сытно и вкусно",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/quiy5zprmddhx1e5zjko",
@@ -137,7 +137,7 @@
       "id": 25
     },
     {
-      "title": "8 острых крыльев",
+      "name": "8 острых крыльев",
       "price": 399,
       "description": "Острые куриные крылья в хрустящей панировке со жгучими специями.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/tkpqsf4ec4xnk3zpsfhl",
@@ -145,7 +145,7 @@
       "id": 5
     },
     {
-      "title": "5 острых крыльев",
+      "name": "5 острых крыльев",
       "price": 264,
       "description": "Острые куриные крылья в хрустящей панировке со жгучими специями.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/qqfnxlotfhmn0t0mwlvi",
@@ -153,7 +153,7 @@
       "id": 26
     },
     {
-      "title": "3 острых крыла",
+      "name": "3 острых крыла",
       "price": 159,
       "description": "Острые куриные крылья в хрустящей панировке со жгучими специями.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/t75u3h8pm5zx4akn5stt",
@@ -161,7 +161,7 @@
       "id": 27
     },
     {
-      "title": "3 оригинальных ножек",
+      "name": "3 оригинальных ножек",
       "price": 284,
       "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/plhaq4a9nf3kiktgkbps",
@@ -169,7 +169,7 @@
       "id": 28
     },
     {
-      "title": "3 острых ножек",
+      "name": "3 острых ножек",
       "price": 284,
       "description": "Куриные ножки в острой панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/otymhedlrdumokp9ctwi",
@@ -177,7 +177,7 @@
       "id": 29
     },
     {
-      "title": "2 оригинальные ножки",
+      "name": "2 оригинальные ножки",
       "price": 194,
       "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ixwqfubig1y8sjzwbmpe",
@@ -185,7 +185,7 @@
       "id": 30
     },
     {
-      "title": "2 острые ножки",
+      "name": "2 острые ножки",
       "price": 194,
       "description": "Kуриные ножки в острой панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ntabckk1ejaajgonbuwo",
@@ -193,7 +193,7 @@
       "id": 31
     },
     {
-      "title": "1оригинальная ножка",
+      "name": "1оригинальная ножка",
       "price": 99,
       "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/zytt8qgi9n8mob4zgfef",
@@ -201,7 +201,7 @@
       "id": 32
     },
     {
-      "title": "1 острая ножка",
+      "name": "1 острая ножка",
       "price": 99,
       "description": "Куриные ножки в острой панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/dfrvbvgjzwifyfd51ytl",
@@ -209,7 +209,7 @@
       "id": 33
     },
     {
-      "title": "8 оригинальных стрипсов",
+      "name": "8 оригинальных стрипсов",
       "price": 429,
       "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ueyby9q8qvhrmgaxw5nw",
@@ -217,7 +217,7 @@
       "id": 34
     },
     {
-      "title": "8 острых стрипсов",
+      "name": "8 острых стрипсов",
       "price": 429,
       "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vp78e5wtnl3ecmf2bzhg",
@@ -225,7 +225,7 @@
       "id": 35
     },
     {
-      "title": "5 острых стрипсов",
+      "name": "5 острых стрипсов",
       "price": 289,
       "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/c9ivb6dyt9iwbp1xfkon",
@@ -233,7 +233,7 @@
       "id": 36
     },
     {
-      "title": "5 оригинальных стрипсов",
+      "name": "5 оригинальных стрипсов",
       "price": 289,
       "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/yiablsxyn4lffweisvya",
@@ -241,7 +241,7 @@
       "id": 37
     },
     {
-      "title": "3 оригинальных стрипса",
+      "name": "3 оригинальных стрипса",
       "price": 179,
       "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ojkzlbywmcdzwkmmfdfv",
@@ -249,7 +249,7 @@
       "id": 3
     },
     {
-      "title": "3 острых стрипса",
+      "name": "3 острых стрипса",
       "price": 179,
       "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/wg2qae85yd8vigli1qsb",
@@ -257,7 +257,7 @@
       "id": 2
     },
     {
-      "title": "Боксмастер Оригинальный",
+      "name": "Боксмастер Оригинальный",
       "price": 269,
       "description": "Филе в уникальной панировке, картофель хашбраун, ломтик сыра, салат, помидоры и нежный соус в пшеничной лепешке.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/amreqbzuskbdsiu2j1cc",
@@ -265,7 +265,7 @@
       "id": 38
     },
     {
-      "title": "Боксмастер Острый",
+      "name": "Боксмастер Острый",
       "price": 269,
       "description": "Куриное филе в острой хрустящей панировке, румяный хашбраун, ломтик сыра, кусочки помидора, салат и нежный соус в горячей лепешке",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/x3nq5fyytub0phccqvmt",
@@ -273,7 +273,7 @@
       "id": 39
     },
     {
-      "title": "Шефтауэр оригинальный",
+      "name": "Шефтауэр оригинальный",
       "price": 269,
       "description": "Нежный сливочный соус Цезарь, сочное филе в оригинальной панировке, румяный хашбраун, сыр, салат айcберг и помидоры на пшеничной булочке с черно-белым кунжутом.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/y0khanus3kv90doiq0ob",
@@ -281,7 +281,7 @@
       "id": 40
     },
     {
-      "title": "Шефтауэр острый",
+      "name": "Шефтауэр острый",
       "price": 269,
       "description": "Филе в острой панировке, румяный хашбраун, ломтик сыра, салат айсберг, маринованные огурцы, лук, соус Бургер на пшеничной булочке с черно-белым кунжутом",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vu2nyzwop17pm6bdtxye",
@@ -289,7 +289,7 @@
       "id": 41
     },
     {
-      "title": "Сандерс Бургер Оригинальный",
+      "name": "Сандерс Бургер Оригинальный",
       "price": 269,
       "description": "Уникальная рецептура, продуманная до мелочей - для создания неповторимого вкуса премиального бургера KFC. Сливочная булочка Бриошь, двойной сыр Чеддер, маринованные огурчики, хрустящий салат и легендарное куриное филе в оригинальной панировке",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ludrxpfmb0f8egclxyis",
@@ -297,7 +297,7 @@
       "id": 42
     },
     {
-      "title": "Сандерс Бургер Острый",
+      "name": "Сандерс Бургер Острый",
       "price": 269,
       "description": "Уникальная рецептура, продуманная до мелочей - для создания неповторимого вкуса премиального бургера KFC. Сливочная булочка Бриошь, двойной сыр Чеддер, маринованные огурчики, хрустящий салат и легендарное куриное филе в острой панировке",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/s15yapqjk3jqc10jcjzq",
@@ -305,7 +305,7 @@
       "id": 43
     },
     {
-      "title": "Шеф бургер \"Де Люкс\" оригинальный",
+      "name": "Шеф бургер \"Де Люкс\" оригинальный",
       "price": 239,
       "description": "Оригинальный бургер от Шефа! Оригинальное филе в хрустящей панировке, салат айсберг, маринованные огурцы, лук, фирменный соус Бургер, булочка с кунжутом и сыр.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/l5lpmm4x7kcjg0mwvvtb",
@@ -313,7 +313,7 @@
       "id": 44
     },
     {
-      "title": "Шеф бургер \"Де Люкс\" острый",
+      "name": "Шеф бургер \"Де Люкс\" острый",
       "price": 239,
       "description": "Острый бургер от Шефа! Острое филе в хрустящей панировке, салат айсберг, маринованные огурцы, лук, фирменный соус Бургер, булочка с кунжутом и сыр.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/tvjqe9gtxgrrjhaz1i0m",
@@ -321,7 +321,7 @@
       "id": 45
     },
     {
-      "title": "Твистер \"Де Люкс\" Острый",
+      "name": "Твистер \"Де Люкс\" Острый",
       "price": 219,
       "description": "Кусочки нежного куриного филе в острой панировке, салатик айсберг, пикантные маринованные огурчики, лук, сыр и нежный соус завернутые в пшеничную лепешку.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/nktmaq00pmda7gptqauw",
@@ -329,7 +329,7 @@
       "id": 46
     },
     {
-      "title": "Твистер \"Де Люкс\" Оригинальный",
+      "name": "Твистер \"Де Люкс\" Оригинальный",
       "price": 219,
       "description": "Кусочки нежного куриного филе в оригинальной панировке, салат айсберг, пикантные маринованные огурчики, лук, сыр и нежный соус завернутые в пшеничную лепешку.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/lypwaplkrbjf9isczbwb",
@@ -337,7 +337,7 @@
       "id": 47
     },
     {
-      "title": "Чизбургер \"Де Люкс\"",
+      "name": "Чизбургер \"Де Люкс\"",
       "price": 209,
       "description": "Пряный горчичный соус, кетчуп, сочное филе в оригинальной панировке, лук, сыр Чеддер, огурцы на пшеничной булочке, свежий салат и ломтики помидора.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ayhzeymbetamjk65ylpk",
@@ -345,7 +345,7 @@
       "id": 48
     },
     {
-      "title": "Шеф Бургер острый",
+      "name": "Шеф Бургер острый",
       "price": 209,
       "description": "Фирменный соус \"Бургер\", филе в панировке Hot&spicy, листья салата, маринованные огурчики, лук, булочка с черно-белым кунжутом.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/x1gqwjewx1xum2sljwgv",
@@ -353,7 +353,7 @@
       "id": 49
     },
     {
-      "title": "Шеф Бургер оригинальный",
+      "name": "Шеф Бургер оригинальный",
       "price": 209,
       "description": "Сливочный соус, филе в уникальной панировке, салат айсберг и помидоры на пшеничной булочке с черно-белым кунжутом.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/lwcin0qtsllcmj5c4jca",
@@ -361,7 +361,7 @@
       "id": 50
     },
     {
-      "title": "Твистер \"Веджи\"",
+      "name": "Твистер \"Веджи\"",
       "price": 189,
       "description": "Картофельная котлета Хашбраун, ломтик сыра, листья салата и кусочки помидора в нежном соусе в пшеничной лепешке.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/geiuohamkoj78hqfvbas",
@@ -369,7 +369,7 @@
       "id": 51
     },
     {
-      "title": "Твистер Острый",
+      "name": "Твистер Острый",
       "price": 189,
       "description": "Кусочки куринного филе в острой панировке, листья салата, кусочки помидора и нежный соус в пшеничной лепешке.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/z5ws9ghfxjlg26ivwyez",
@@ -377,7 +377,7 @@
       "id": 52
     },
     {
-      "title": "Твистер Оригинальный",
+      "name": "Твистер Оригинальный",
       "price": 189,
       "description": "Кусочки куриного филе в уникальной панировке, листья салата, помидоры и нежный соус в пшеничной лепешке.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/pbv6ybmahdszhungdxd3",
@@ -385,7 +385,7 @@
       "id": 53
     },
     {
-      "title": "Чизбургер",
+      "name": "Чизбургер",
       "price": 159,
       "description": "Горчичный соус, кетчуп, 2 стрипса оригинальных, лук, сыр чеддер, огурцы на пшеничной булочке с кунжутом.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/tjlpg4vdweos5evux2b4",
@@ -393,7 +393,7 @@
       "id": 54
     },
     {
-      "title": "Твистер \"Джуниор\"",
+      "name": "Твистер \"Джуниор\"",
       "price": 144,
       "description": "Сырная лепешка, сочные байтсы из куриного филе в панировке, горчица, кетчуп, сыр, маринованные огурчики и лук.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/lekfnn94miroulszzsaa",
@@ -401,7 +401,7 @@
       "id": 1
     },
     {
-      "title": "Баскет фри",
+      "name": "Баскет фри",
       "price": 199,
       "description": "Хрустящая корочка и мягкая и рассыпчатая серединка. В наших ломтиках мы сохранили еще больше вкуса твоего любимого картофеля фри.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/maymt5tr3hwn5vjjkc5j",
@@ -409,7 +409,7 @@
       "id": 55
     },
     {
-      "title": "Картофель по-деревенски (стандартная)",
+      "name": "Картофель по-деревенски (стандартная)",
       "price": 139,
       "description": " ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/icsri4oansvmpy6a63ji",
@@ -417,7 +417,7 @@
       "id": 56
     },
     {
-      "title": "Картофель фри (стандартная порция)",
+      "name": "Картофель фри (стандартная порция)",
       "price": 119,
       "description": "Хрустящая корочка и мягкая и рассыпчатая серединка. В наших ломтиках мы сохранили еще больше вкуса твоего любимого картофеля фри.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/loj2p4fiibru7hwmbwut",
@@ -425,7 +425,7 @@
       "id": 57
     },
     {
-      "title": "Картофель по-деревенски (маленькая порция)",
+      "name": "Картофель по-деревенски (маленькая порция)",
       "price": 94,
       "description": " ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/clnaw0gdxeidfqiyov8f",
@@ -433,7 +433,7 @@
       "id": 58
     },
     {
-      "title": "Картофель фри (маленькая порция)",
+      "name": "Картофель фри (маленькая порция)",
       "price": 89,
       "description": "Хрустящая корочка и мягкая и рассыпчатая серединка. В наших ломтиках мы сохранили еще больше вкуса твоего любимого картофеля фри.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jifu1r3nbosattzmgllk",
@@ -441,7 +441,7 @@
       "id": 59
     },
     {
-      "title": "Милкшейк Шоколадно-ореховый (0,4 л.)",
+      "name": "Милкшейк Шоколадно-ореховый (0,4 л.)",
       "price": 125,
       "description": "Шоколадно-Ореховый вкус - лучший выбор тех, кто не представляет свою жизнь без молочного шоколада. Такой восхитительно нежный, что хочется пить, не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/pbszaq5gr50p4tb75cnl",
@@ -449,7 +449,7 @@
       "id": 60
     },
     {
-      "title": "Милкшейк Ванильный (0,4 л.)",
+      "name": "Милкшейк Ванильный (0,4 л.)",
       "price": 125,
       "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. Молочный коктейль - такой восхитительно нежный, что хочется пить, не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/eiqzyddixbx5hylgvfhn",
@@ -457,7 +457,7 @@
       "id": 61
     },
     {
-      "title": "Милкшейк Клубника (0,4 л.)",
+      "name": "Милкшейк Клубника (0,4 л.)",
       "price": 125,
       "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. Молочный коктейль - такой восхитительно нежный, что хочется пить не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/miutez2goehx69tru6lu",
@@ -465,7 +465,7 @@
       "id": 62
     },
     {
-      "title": "Милкшейк Шоколадно-ореховый (0,25 л.)",
+      "name": "Милкшейк Шоколадно-ореховый (0,25 л.)",
       "price": 95,
       "description": "Восхитительный Шоколадно-Ореховый вкус - лучший выбор для тех, кто не представляет свою жизнь без молочного шоколада. Молочный коктейль - такой восхитительно нежный, что хочется пить, не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/po3v0imvbxfdie7mwmr9",
@@ -473,7 +473,7 @@
       "id": 63
     },
     {
-      "title": "Милкшейк Ванильный (0,25 л.)",
+      "name": "Милкшейк Ванильный (0,25 л.)",
       "price": 95,
       "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. Молочный коктейль - такой нежный, что хочется пить, не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/bxmlyljzpcwsmnhp69ot",
@@ -481,7 +481,7 @@
       "id": 64
     },
     {
-      "title": "Милкшейк Клубника (0,25 л.)",
+      "name": "Милкшейк Клубника (0,25 л.)",
       "price": 95,
       "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. Молочный коктейль - такой восхитительно нежный, что хочется пить не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ehhksvyhp4uorxwuiump",
@@ -489,7 +489,7 @@
       "id": 65
     },
     {
-      "title": "Милкшейк Шоколадно-ореховый (0,4 л.)",
+      "name": "Милкшейк Шоколадно-ореховый (0,4 л.)",
       "price": 125,
       "description": "Шоколадно-Ореховый вкус - лучший выбор тех, кто не представляет свою жизнь без молочного шоколада. Такой восхитительно нежный, что хочется пить, не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/pbszaq5gr50p4tb75cnl",
@@ -497,7 +497,7 @@
       "id": 66
     },
     {
-      "title": "Милкшейк Ванильный (0,4 л.)",
+      "name": "Милкшейк Ванильный (0,4 л.)",
       "price": 125,
       "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. Молочный коктейль - такой восхитительно нежный, что хочется пить, не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/eiqzyddixbx5hylgvfhn",
@@ -505,7 +505,7 @@
       "id": 67
     },
     {
-      "title": "Милкшейк Клубника (0,4 л.)",
+      "name": "Милкшейк Клубника (0,4 л.)",
       "price": 125,
       "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. Молочный коктейль - такой восхитительно нежный, что хочется пить не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/miutez2goehx69tru6lu",
@@ -513,7 +513,7 @@
       "id": 68
     },
     {
-      "title": "Милкшейк Шоколадно-ореховый (0,25 л.)",
+      "name": "Милкшейк Шоколадно-ореховый (0,25 л.)",
       "price": 95,
       "description": "Восхитительный Шоколадно-Ореховый вкус - лучший выбор для тех, кто не представляет свою жизнь без молочного шоколада. Молочный коктейль - такой восхитительно нежный, что хочется пить, не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/po3v0imvbxfdie7mwmr9",
@@ -521,7 +521,7 @@
       "id": 69
     },
     {
-      "title": "Милкшейк Ванильный (0,25 л.)",
+      "name": "Милкшейк Ванильный (0,25 л.)",
       "price": 95,
       "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. Молочный коктейль - такой нежный, что хочется пить, не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/bxmlyljzpcwsmnhp69ot",
@@ -529,7 +529,7 @@
       "id": 70
     },
     {
-      "title": "Милкшейк Клубника (0,25 л.)",
+      "name": "Милкшейк Клубника (0,25 л.)",
       "price": 95,
       "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. Молочный коктейль - такой восхитительно нежный, что хочется пить не отрываясь!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ehhksvyhp4uorxwuiump",
@@ -537,49 +537,49 @@
       "id": 71
     },
     {
-      "title": "Хашбраун",
+      "name": "Хашбраун",
       "price": 39,
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/y9q5b06sagwonnn4usmx",
       "category": "Other",
       "id": 72
     },
     {
-      "title": "Соус кисло-сладкий Чили",
+      "name": "Соус кисло-сладкий Чили",
       "price": 34,
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jzp5srdizhqjgpkwf85e",
       "category": "Other",
       "id": 73
     },
     {
-      "title": "Соус чесночный",
+      "name": "Соус чесночный",
       "price": 34,
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/rfqmm0a0znoatjto3gc5",
       "category": "Other",
       "id": 74
     },
     {
-      "title": "Соус сырный",
+      "name": "Соус сырный",
       "price": 34,
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/pj0bvepu37wpn3hhahwv",
       "category": "Other",
       "id": 75
     },
     {
-      "title": "Соус Барбекю",
+      "name": "Соус Барбекю",
       "price": 34,
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/kttkrw4gogvokb797clm",
       "category": "Other",
       "id": 76
     },
     {
-      "title": "Соус терияки",
+      "name": "Соус терияки",
       "price": 34,
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/skjlawoti59e2qkimjar",
       "category": "Other",
       "id": 77
     },
     {
-      "title": "Кетчуп",
+      "name": "Кетчуп",
       "price": 34,
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vojdxh6x2kdubowpyrk1",
       "category": "Other",
@@ -590,6 +590,7 @@
       "name": "esgr",
       "price": 436,
       "description": "es",
+      "category": "Other",
       "id": 79
     },
     {
@@ -597,6 +598,7 @@
       "name": "esgr",
       "price": 436,
       "description": "es",
+      "category": "Other",
       "id": 80
     },
     {
@@ -604,6 +606,7 @@
       "name": "esgr",
       "price": 436,
       "description": "es",
+      "category": "Other",
       "id": 81
     }
   ]
