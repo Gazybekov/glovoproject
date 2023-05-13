@@ -33,17 +33,9 @@
       "id": 13
     },
     {
-      "name": "Баскет Дуэт Острый",
-      "price": 749,
-      "description": "Всемирно известные хиты от KFC в нашем Баскете! Сочные кусочки курицы: 2 ножки, 4 куриных крылышка*, 4 стрипса в панировке Hot and Spicy, 1 картофель фри стд.",
-      "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jldrttiiallquko329d9",
-      "category": "Basket",
-      "id": 14
-    },
-    {
       "name": "Баскет Дуэт Оригинальный",
       "price": 749,
-      "description": "Всемирно известные хиты от KFC в нашем Баскете! Сочные кусочки курицы: 2 ножки, 4 куриных крылышка*, 4 стрипса в оригинальной панировке, 1 картофель фри стд.",
+      "description": "Сочные кусочки курицы: 2 ножки, 4 куриных крылышка*, 4 стрипса в оригинальной панировке, 1 картофель фри стд.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/fpsuoweghrcaywj3qwxq",
       "category": "Basket",
       "id": 15
@@ -91,7 +83,7 @@
     {
       "name": "Пати Баскет",
       "price": 199,
-      "description": "Попробуй супермегазаводной \"Пати Баскет\" в KFC. Хрустящий аппетитный картофель, 6 кусочков байтс и сырный соус- тебе понравится!",
+      "description": "Хрустящий аппетитный картофель, 6 кусочков байтс и сырный соус- тебе понравится!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jhhwjrz9k91r3lsgvof4",
       "category": "Basket",
       "id": 20
@@ -275,7 +267,7 @@
     {
       "name": "Шефтауэр оригинальный",
       "price": 269,
-      "description": "Нежный сливочный соус Цезарь, сочное филе в оригинальной панировке, румяный хашбраун, сыр, салат айcберг и помидоры на пшеничной булочке с черно-белым кунжутом.",
+      "description": "Нежный сливочный соус Цезарь, сочное филе в оригинальной панировке, румяный хашбраун.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/y0khanus3kv90doiq0ob",
       "category": "Sandwich",
       "id": 40
@@ -283,7 +275,7 @@
     {
       "name": "Шефтауэр острый",
       "price": 269,
-      "description": "Филе в острой панировке, румяный хашбраун, ломтик сыра, салат айсберг, маринованные огурцы, лук, соус Бургер на пшеничной булочке с черно-белым кунжутом",
+      "description": "Филе в острой панировке, румяный хашбраун, ломтик сыра, салат айсберг, маринованные огурцы, лук",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vu2nyzwop17pm6bdtxye",
       "category": "Sandwich",
       "id": 41
@@ -291,7 +283,7 @@
     {
       "name": "Сандерс Бургер Оригинальный",
       "price": 269,
-      "description": "Уникальная рецептура, продуманная до мелочей - для создания неповторимого вкуса премиального бургера KFC. Сливочная булочка Бриошь, двойной сыр Чеддер, маринованные огурчики, хрустящий салат и легендарное куриное филе в оригинальной панировке",
+      "description": "Уникальная рецептура, продуманная до мелочей - для создания неповторимого вкуса премиального бургера KFC.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ludrxpfmb0f8egclxyis",
       "category": "Sandwich",
       "id": 42
@@ -299,7 +291,7 @@
     {
       "name": "Сандерс Бургер Острый",
       "price": 269,
-      "description": "Уникальная рецептура, продуманная до мелочей - для создания неповторимого вкуса премиального бургера KFC. Сливочная булочка Бриошь, двойной сыр Чеддер, маринованные огурчики, хрустящий салат и легендарное куриное филе в острой панировке",
+      "description": "Уникальная рецептура, продуманная до мелочей - для создания неповторимого вкуса премиального бургера KFC. ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/s15yapqjk3jqc10jcjzq",
       "category": "Sandwich",
       "id": 43
@@ -307,7 +299,7 @@
     {
       "name": "Шеф бургер \"Де Люкс\" оригинальный",
       "price": 239,
-      "description": "Оригинальный бургер от Шефа! Оригинальное филе в хрустящей панировке, салат айсберг, маринованные огурцы, лук, фирменный соус Бургер, булочка с кунжутом и сыр.",
+      "description": "Оригинальный бургер от Шефа! Оригинальное филе в хрустящей панировке, салат айсберг",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/l5lpmm4x7kcjg0mwvvtb",
       "category": "Sandwich",
       "id": 44
@@ -323,7 +315,7 @@
     {
       "name": "Твистер \"Де Люкс\" Острый",
       "price": 219,
-      "description": "Кусочки нежного куриного филе в острой панировке, салатик айсберг, пикантные маринованные огурчики, лук, сыр и нежный соус завернутые в пшеничную лепешку.",
+      "description": "Кусочки нежного куриного филе в острой панировке, салатик айсберг",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/nktmaq00pmda7gptqauw",
       "category": "Sandwich",
       "id": 46
@@ -331,7 +323,7 @@
     {
       "name": "Твистер \"Де Люкс\" Оригинальный",
       "price": 219,
-      "description": "Кусочки нежного куриного филе в оригинальной панировке, салат айсберг, пикантные маринованные огурчики, лук, сыр и нежный соус завернутые в пшеничную лепешку.",
+      "description": "Кусочки нежного куриного филе в оригинальной панировке, салат айсберг, ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/lypwaplkrbjf9isczbwb",
       "category": "Sandwich",
       "id": 47
@@ -443,7 +435,7 @@
     {
       "name": "Милкшейк Шоколадно-ореховый (0,4 л.)",
       "price": 125,
-      "description": "Шоколадно-Ореховый вкус - лучший выбор тех, кто не представляет свою жизнь без молочного шоколада. Такой восхитительно нежный, что хочется пить, не отрываясь!",
+      "description": "Шоколадно-Ореховый вкус - лучший выбор тех, кто не представляет свою жизнь без молочного шоколада. ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/pbszaq5gr50p4tb75cnl",
       "category": "Drinks",
       "id": 60
@@ -451,7 +443,7 @@
     {
       "name": "Милкшейк Ванильный (0,4 л.)",
       "price": 125,
-      "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. Молочный коктейль - такой восхитительно нежный, что хочется пить, не отрываясь!",
+      "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/eiqzyddixbx5hylgvfhn",
       "category": "Drinks",
       "id": 61
@@ -459,7 +451,7 @@
     {
       "name": "Милкшейк Клубника (0,4 л.)",
       "price": 125,
-      "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. Молочный коктейль - такой восхитительно нежный, что хочется пить не отрываясь!",
+      "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/miutez2goehx69tru6lu",
       "category": "Drinks",
       "id": 62
@@ -467,7 +459,7 @@
     {
       "name": "Милкшейк Шоколадно-ореховый (0,25 л.)",
       "price": 95,
-      "description": "Восхитительный Шоколадно-Ореховый вкус - лучший выбор для тех, кто не представляет свою жизнь без молочного шоколада. Молочный коктейль - такой восхитительно нежный, что хочется пить, не отрываясь!",
+      "description": "Восхитительный Шоколадно-Ореховый вкус - лучший выбор для тех, кто не представляет свою жизнь без молочного шоколада. ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/po3v0imvbxfdie7mwmr9",
       "category": "Drinks",
       "id": 63
@@ -475,7 +467,7 @@
     {
       "name": "Милкшейк Ванильный (0,25 л.)",
       "price": 95,
-      "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. Молочный коктейль - такой нежный, что хочется пить, не отрываясь!",
+      "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/bxmlyljzpcwsmnhp69ot",
       "category": "Drinks",
       "id": 64
@@ -483,7 +475,7 @@
     {
       "name": "Милкшейк Клубника (0,25 л.)",
       "price": 95,
-      "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. Молочный коктейль - такой восхитительно нежный, что хочется пить не отрываясь!",
+      "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ehhksvyhp4uorxwuiump",
       "category": "Drinks",
       "id": 65
@@ -491,7 +483,7 @@
     {
       "name": "Милкшейк Шоколадно-ореховый (0,4 л.)",
       "price": 125,
-      "description": "Шоколадно-Ореховый вкус - лучший выбор тех, кто не представляет свою жизнь без молочного шоколада. Такой восхитительно нежный, что хочется пить, не отрываясь!",
+      "description": "Шоколадно-Ореховый вкус - лучший выбор тех, кто не представляет свою жизнь без молочного шоколада.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/pbszaq5gr50p4tb75cnl",
       "category": "Drinks",
       "id": 66
@@ -499,7 +491,7 @@
     {
       "name": "Милкшейк Ванильный (0,4 л.)",
       "price": 125,
-      "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. Молочный коктейль - такой восхитительно нежный, что хочется пить, не отрываясь!",
+      "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/eiqzyddixbx5hylgvfhn",
       "category": "Drinks",
       "id": 67
@@ -507,7 +499,7 @@
     {
       "name": "Милкшейк Клубника (0,4 л.)",
       "price": 125,
-      "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. Молочный коктейль - такой восхитительно нежный, что хочется пить не отрываясь!",
+      "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/miutez2goehx69tru6lu",
       "category": "Drinks",
       "id": 68
@@ -515,7 +507,7 @@
     {
       "name": "Милкшейк Шоколадно-ореховый (0,25 л.)",
       "price": 95,
-      "description": "Восхитительный Шоколадно-Ореховый вкус - лучший выбор для тех, кто не представляет свою жизнь без молочного шоколада. Молочный коктейль - такой восхитительно нежный, что хочется пить, не отрываясь!",
+      "description": "Восхитительный Шоколадно-Ореховый вкус - лучший выбор для тех, кто не представляет свою жизнь без молочного шоколада.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/po3v0imvbxfdie7mwmr9",
       "category": "Drinks",
       "id": 69
@@ -523,7 +515,7 @@
     {
       "name": "Милкшейк Ванильный (0,25 л.)",
       "price": 95,
-      "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. Молочный коктейль - такой нежный, что хочется пить, не отрываясь!",
+      "description": "Выбери коктейль со вкусом Нежной Ванили, такой простой и в то же время изысканный. ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/bxmlyljzpcwsmnhp69ot",
       "category": "Drinks",
       "id": 70
@@ -531,7 +523,7 @@
     {
       "name": "Милкшейк Клубника (0,25 л.)",
       "price": 95,
-      "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение. Молочный коктейль - такой восхитительно нежный, что хочется пить не отрываясь!",
+      "description": "Яркий вкус Лесной Клубники перенесет в лето и подарит хорошее настроение.!",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ehhksvyhp4uorxwuiump",
       "category": "Drinks",
       "id": 71
@@ -584,7 +576,6 @@
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vojdxh6x2kdubowpyrk1",
       "category": "Other",
       "id": 78
-<<<<<<< HEAD
     },
     {
       "picture": "sdg",
@@ -609,8 +600,6 @@
       "description": "es",
       "category": "Other",
       "id": 81
-=======
->>>>>>> 3d37f1898e990f28e75f18c8eb92d379d30c6279
     }
   ]
 }
