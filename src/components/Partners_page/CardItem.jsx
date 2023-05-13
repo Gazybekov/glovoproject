@@ -15,7 +15,7 @@ const CardItem = ({ item }) => {
       </div>
       <div className="price">
         <span>{item.price}</span>
-        <img src={plus} alt="" />
+        <img src={plus} alt="кнопка" />
       </div>
     </div>
   );
