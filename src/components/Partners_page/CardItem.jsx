@@ -16,7 +16,7 @@ const CardItem = ({ item }) => {
       <div className="card_box">
         <img src={item.image} alt="" />
         <div className="text_title">
-          <p>{item.title}</p>
+          <p>{item.name}</p>
           <p>{item.description}</p>
         </div>
       </div>

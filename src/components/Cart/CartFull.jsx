@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "../Partners_page/style/Header.css";
 import { useCart } from "../../context/CartContextProvider";
-import plus from "../Partners_page/img/header_img/plus-new.svg";
 import minus from "../Partners_page/img/header_img/minus.svg";
 import { useProducts } from "../../context/ProductContextProvider";
 import { Box, Grid, Pagination } from "@mui/material";
 import CardItem from "../Partners_page/CardItem";
+import "../Partners_page/style/Header.css";
+import pluss from "../Partners_page/img/header_img/plus-new.svg";
+import { calcTotalPrice } from "../../helpers/function";
 
 export default function CartFull({ item }) {
-  console.log(item);
   const {
     getCart,
     cart,
@@ -17,7 +18,6 @@ export default function CartFull({ item }) {
     addProductToCart,
   } = useCart();
 
-  console.log(cart);
   React.useEffect(() => {
     getCart();
   }, []);
@@ -25,6 +25,30 @@ export default function CartFull({ item }) {
   const cartCleaner = () => {
     localStorage.removeItem("cart");
     getCart();
+  };
+
+  const handleDecrease = (item) => {
+    if (item.count > 1) {
+      const updatedCount = item.count - 1;
+      const updatedSubPrice = updatedCount * item.item.price;
+      changeProductCount(updatedCount, item.item.id, updatedSubPrice);
+    } else {
+      deleteCartProduct(item.item.id);
+    }
+  };
+
+  const handleIncrease = (item) => {
+    const updatedCount = item.count + 1;
+    const updatedSubPrice = updatedCount * item.item.price;
+
+    changeProductCount(updatedCount, item.item.id, updatedSubPrice);
+  };
+  const getTotalProductCount = (products) => {
+    let totalCount = 0;
+    products.forEach((item) => {
+      totalCount += item.count;
+    });
+    return totalCount;
   };
 
   const { products, getProducts } = useProducts();
@@ -80,7 +104,7 @@ export default function CartFull({ item }) {
               <img src={minus} alt="" />
             </button>
             <button onClick={() => addProductToCart(item)}>
-              <img src={plus} alt="" />
+              <img src={pluss} alt="" />
             </button>
           </div>
           <button>Заказать продукты (3) за цена</button>
