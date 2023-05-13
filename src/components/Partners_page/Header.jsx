@@ -46,7 +46,7 @@ const Header = () => {
             <div className="scooter_section">
               <img src={scooter} alt="" />
               <p>80,00 KGS</p>
-              <Link to={"/products"}>
+              <Link to={"/addproducts"}>
                 <button>Добавить новый продукт</button>
               </Link>
             </div>

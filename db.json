@@ -2,7 +2,7 @@
   "products": [
     {
       "name": "Баскет L 26 крыльев",
-      "price": 1199,
+      "price": 1399,
       "description": "26 острых крыльев",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/jbz4kwfvwhztjjkkbv5z",
       "category": "Basket",
@@ -584,22 +584,6 @@
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vojdxh6x2kdubowpyrk1",
       "category": "Other",
       "id": 78
-    },
-    {
-      "picture": "https://img3.akspic.ru/previews/5/5/4/1/7/171455/171455-zhivopis-illustracia-art-voda-oblako-500x.jpg",
-      "name": "qwert",
-      "price": null,
-      "description": "qwert",
-      "category": "qwert",
-      "id": 79
-    },
-    {
-      "picture": "https://img3.akspic.ru/previews/5/5/4/1/7/171455/171455-zhivopis-illustracia-art-voda-oblako-500x.jpg",
-      "name": "hello",
-      "price": 213456,
-      "description": "Xt,ehtr",
-      "category": "qwert",
-      "id": 80
     }
   ]
 }

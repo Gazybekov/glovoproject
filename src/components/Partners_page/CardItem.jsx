@@ -1,4 +1,5 @@
-import React from "react";
+import { Box, Grid, Pagination } from "@mui/material";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../context/CartContextProvider";
 import { useProducts } from "../../context/ProductContextProvider";
@@ -9,6 +10,7 @@ const CardItem = ({ item }) => {
   const { deleteProduct } = useProducts();
   const { addProductToCart } = useCart();
   const navigate = useNavigate();
+
   return (
     <div className="main_wrapper">
       <div className="card_box">

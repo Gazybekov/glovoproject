@@ -14,7 +14,6 @@ const INIT_STATE = {
   productDetails: {},
 };
 
-
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
     case ACTIONS.GET_PRODUCTS:
