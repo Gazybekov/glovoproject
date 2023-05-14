@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap");
+
+.box {
+  text-align: center;
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  margin-left: 25%;
+}
+.box_h1 {
+  padding-top: 60px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.box_h4 {
+  padding-top: 30px;
+  font-family: "Libre Baskerville", serif;
+}
+.box_h4 button {
+  border: 0;
+  font-size: 16px;
+  background-color: white;
+}
+.box_btn {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box_btn button {
+  background-color: white;
+  border-radius: 30px;
+  height: 40px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.inp1 input {
+  border: none;
+  margin-top: 30px;
+  width: 400px;
+  height: 50px;
+  padding-left: 80px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.inp1 img {
+  width: 70px;
+  position: absolute;
+}
+.inp2 input {
+  border: none;
+  margin-top: 30px;
+  width: 400px;
+  height: 50px;
+  padding-left: 80px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.inp2 img {
+  width: 70px;
+  position: absolute;
+}
+.inp3 input {
+  border: none;
+  margin-top: 30px;
+  width: 400px;
+  height: 50px;
+  padding-left: 80px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.inp3 img {
+  width: 70px;
+  position: absolute;
+}
+.btn2 button {
+  margin-top: 50px;
+  width: 400px;
+  height: 60px;
+  border: 0;
+  border-radius: 40px;
+  font-family: "Signika Negative", sans-serif;
+}
+.p p {
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "Libre Baskerville", serif;
+}

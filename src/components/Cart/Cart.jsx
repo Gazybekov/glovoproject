@@ -1,6 +1,6 @@
 import React from "react";
-import "./style/Header.css";
-import astronaut from "./img/header_img/astronaut-grey-scale.svg";
+import "../Partners_page/style/Header.css";
+import astronaut from "../Partners_page/img/header_img/astronaut-grey-scale.svg";
 
 const Cart = () => {
   return (
