@@ -12,6 +12,7 @@ const StoreSection = () => {
   const { getProducts, state, searchResult } = useProducts();
 
   // !filter
+
   const [filterValue, setFilterValue] = useState("");
   const products = state.products;
   const categories = [...new Set(products.map((product) => product.category))];
