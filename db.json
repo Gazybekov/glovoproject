@@ -576,30 +576,6 @@
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vojdxh6x2kdubowpyrk1",
       "category": "Other",
       "id": 78
-    },
-    {
-      "picture": "sdg",
-      "name": "esgr",
-      "price": 436,
-      "description": "es",
-      "category": "Other",
-      "id": 79
-    },
-    {
-      "picture": "sdg",
-      "name": "esgr",
-      "price": 436,
-      "description": "es",
-      "category": "Other",
-      "id": 80
-    },
-    {
-      "picture": "sdg",
-      "name": "esgr",
-      "price": 436,
-      "description": "es",
-      "category": "Other",
-      "id": 81
     }
   ]
 }

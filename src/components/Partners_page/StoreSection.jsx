@@ -1,11 +1,12 @@
 import "./style/Header.css";
-import search from "./img/header_img/icons8-search.svg";
+import searchh from "./img/header_img/icons8-search.svg";
 import CardItem from "./CardItem";
 import "./style/Header.css";
 import square from "./img/header_img/sections-square.svg";
 import { useProducts } from "../../context/ProductContextProvider";
 import { useEffect, useState } from "react";
 import { Box, Grid, Pagination } from "@mui/material";
+import { useSearchParams } from "react-router-dom";
 
 const StoreSection = () => {
   const { getProducts, state, searchResult } = useProducts();
@@ -39,6 +40,16 @@ const StoreSection = () => {
     const end = begin + itemsPerPage;
     return filteredProducts.slice(begin, end);
   }
+  // esarch
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get("q") || "");
+
+  useEffect(() => {
+    getProducts();
+    setSearchParams({
+      q: search,
+    });
+  }, [search]);
 
   return (
     <>
@@ -65,11 +76,13 @@ const StoreSection = () => {
       <div className="store-section">
         <div className="search-input">
           <div className="search">
-            <img src={search} alt="" />
+            <img src={searchh} alt="" />
             <input
               type="text"
               placeholder="Искать в KFC"
               className="search-input__field"
+              onChange={(e) => setSearch(e.target.value)}
+              value={search}
             />
           </div>
         </div>
