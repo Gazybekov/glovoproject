@@ -14,7 +14,6 @@ const INIT_STATE = {
   productDetails: {},
 };
 
-
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
     case ACTIONS.GET_PRODUCTS:
@@ -38,7 +37,7 @@ const ProductContextProvider = ({ children }) => {
       `${JSON_API_PRODUCTS}${window.location.search}`
     );
 
-    // console.log(data);
+    console.log(data);
 
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };

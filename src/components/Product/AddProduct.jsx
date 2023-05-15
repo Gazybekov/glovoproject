@@ -1,4 +1,3 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useProducts } from "../../context/ProductContextProvider";
 import "./AddProduct.css";
@@ -6,10 +5,11 @@ import "./AddProduct.css";
 const AddProduct = () => {
   const { addProduct } = useProducts();
   const [product, setProduct] = useState({
-    picture: "",
+    image: "",
     name: "",
     price: 0,
     description: "",
+    category: "",
   });
 
   const handleInp = (e) => {

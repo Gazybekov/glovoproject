@@ -18,19 +18,19 @@ const Read = () => {
   }, [searchParams]);
 
   //pagination
-  const [page, setPage] = useState(1);
-  const itemsPerPage = 3;
-  const count = Math.ceil(products.length / itemsPerPage);
+  //   const [page, setPage] = useState(1);
+  //   const itemsPerPage = 10;
+  //   const count = Math.ceil(products.length / itemsPerPage);
 
-  const handleChange = (e, p) => {
-    setPage(p);
-  };
+  //   const handleChange = (e, p) => {
+  //     setPage(p);
+  //   };
 
-  function currentData() {
-    const begin = (page - 1) * itemsPerPage;
-    const end = begin + itemsPerPage;
-    return products.slice(begin, end);
-  }
+  //   function currentData() {
+  //     const begin = (page - 1) * itemsPerPage;
+  //     const end = begin + itemsPerPage;
+  //     return products.slice(begin, end);
+  //   }
 
   return (
     <>

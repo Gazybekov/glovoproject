@@ -21,13 +21,14 @@ const StoreSection = () => {
         </div>
       </div>
       <h3>Самое популярное</h3>
-      <div className="box_propducts">
+
+      {/* <div className="box_propducts">
         {products && products.length > 0 ? (
           products.map((item) => <CardItem key={item.id} item={item} />)
         ) : (
           <p>No products available</p>
         )}
-      </div>
+      </div> */}
       <CartFull></CartFull>
     </div>
   );
