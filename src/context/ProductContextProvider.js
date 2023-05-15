@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { createContext, useContext, useEffect, useReducer } from "react";
+import React, { createContext, useContext, useEffect, useReducer, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ACTIONS, JSON_API_PRODUCTS } from "../helpers/const";
 
@@ -13,6 +13,7 @@ const INIT_STATE = {
   products: [],
   productDetails: {},
 };
+
 
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
@@ -30,18 +31,22 @@ const reducer = (state = INIT_STATE, action) => {
 const ProductContextProvider = ({ children }) => {
   const navigate = useNavigate();
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
-  // console.log(state);
+  const [searchResult, setSearchResult] = useState([])
+
+  // Фильтрация
+  async function searchCards() {
+    let { data } = await axios(JSON_API_PRODUCTS);
+    setSearchResult(data);
+  }
 
   const getProducts = async () => {
     const { data } = await axios(
       `${JSON_API_PRODUCTS}${window.location.search}`
     );
-
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };
 
   const addProduct = async (newProduct) => {
-    console.log(newProduct);
     await axios.post(JSON_API_PRODUCTS, newProduct);
     getProducts();
     navigate("/products");
@@ -74,15 +79,12 @@ const ProductContextProvider = ({ children }) => {
 
     if (value === "all") {
       search.delete(query);
-    } else if (query == "price") {
-      search.set("price_gte", value[0]);
-      search.set("price_lte", value[1]);
     } else {
       search.set(query, value);
     }
 
     const url = `${location.pathname}?${search.toString()}`;
-    console.log(url);
+    // console.log(url);
     navigate(url);
   };
 
@@ -99,6 +101,9 @@ const ProductContextProvider = ({ children }) => {
     productDetails: state.productDetails,
     saveEditedProduct,
     fetchByParams,
+    state,
+    searchResult,
+    setSearchResult
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>

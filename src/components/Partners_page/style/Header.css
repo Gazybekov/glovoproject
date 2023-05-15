@@ -411,3 +411,14 @@ ul li:hover {
 .cart-textbox span {
   width: 30%;
 }
+.box_products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.filter ul li button {
+  all: unset;
+  font-size: 17px;
+  padding-left: 10px;
+}

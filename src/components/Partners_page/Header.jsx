@@ -22,11 +22,15 @@ const Header = () => {
         </div>
       </div>
       <div className="logo_box">
-        <img
-          src="https://res.cloudinary.com/glovoapp/image/fetch/f_svg,q_auto:low/https://glovoapp.com/images/glovo-white.svg"
-          alt=""
-          className="logoGlovo"
-        />
+        <Link to={"/"}>
+          {" "}
+          <img
+            src="https://res.cloudinary.com/glovoapp/image/fetch/f_svg,q_auto:low/https://glovoapp.com/images/glovo-white.svg"
+            alt=""
+            className="logoGlovo"
+          />
+        </Link>
+
         <div className="adress">
           <p>Добавьте свой адрес</p>
           <img src={arrow} alt="" className="img_arrow" />

@@ -12,7 +12,7 @@ const Nav = () => {
         <button className="nav_button">Начать!</button>
       </div>
       <div className="Nav_glovo2">
-        <h1 className="nav2_h1">Доставка в городе Бишкек</h1>
+        <h1 className="nav2_h1">Доставка в городе Бишкеке</h1>
         <input
           className="nav2_input"
           type="text"
