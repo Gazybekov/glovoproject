@@ -5,9 +5,12 @@ import "./style/Header.css";
 import square from "./img/header_img/sections-square.svg";
 import { useProducts } from "../../context/ProductContextProvider";
 import { useEffect, useState } from "react";
+import { Box, Grid, Pagination } from "@mui/material";
 
 const StoreSection = () => {
   const { getProducts, state, searchResult } = useProducts();
+
+  // !filter
   const [filterValue, setFilterValue] = useState("");
   const products = state.products;
   const categories = [...new Set(products.map((product) => product.category))];
@@ -19,6 +22,23 @@ const StoreSection = () => {
   const filteredProducts = filterValue
     ? products.filter((product) => product.category === filterValue)
     : products;
+
+  // !
+
+  //!pagination
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 6;
+  const count = Math.ceil(filteredProducts.length / itemsPerPage);
+
+  const handleChange = (e, p) => {
+    setPage(p);
+  };
+
+  function currentData() {
+    const begin = (page - 1) * itemsPerPage;
+    const end = begin + itemsPerPage;
+    return filteredProducts.slice(begin, end);
+  }
 
   return (
     <>
@@ -53,16 +73,32 @@ const StoreSection = () => {
             />
           </div>
         </div>
-        <h3>Самое популярное</h3>
-        <div className="box_products">
-          {filteredProducts.length > 0 ? (
-            filteredProducts.map((product) => (
-              <CardItem key={product.id} item={product} />
-            ))
-          ) : (
-            <p>No products available</p>
-          )}
-        </div>
+
+        <Grid item md={9}>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              my: "2rem",
+              justifyContent: "space-evenly",
+            }}
+          >
+            {currentData().length > 0 ? (
+              currentData().map((product) => (
+                <CardItem key={product.id} item={product} />
+              ))
+            ) : (
+              <p>No products available</p>
+            )}
+          </Box>
+          <Pagination
+            count={count}
+            page={page}
+            onChange={handleChange}
+            variant="outlined"
+            color="secondary"
+          />
+        </Grid>
       </div>
     </>
   );

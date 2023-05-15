@@ -10,7 +10,7 @@
     },
     {
       "name": "Баскет 10 оригинальных ножек",
-      "price": 899,
+      "price": 890,
       "description": "Баскет 10 оригинальных ножек",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/zo5u2scndxik1y08nmxk",
       "category": "Basket",
@@ -35,7 +35,7 @@
     {
       "name": "Баскет Дуэт Оригинальный",
       "price": 749,
-      "description": "Сочные кусочки курицы: 2 ножки, 4 куриных крылышка*, 4 стрипса в оригинальной панировке, 1 картофель фри стд.",
+      "description": "Сочные кусочки курицы: 2 ножки, 4 куриных крылышка*, ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/fpsuoweghrcaywj3qwxq",
       "category": "Basket",
       "id": 15
@@ -59,7 +59,7 @@
     {
       "name": "Баскет 5 острых ножек",
       "price": 464,
-      "description": "Kуриные ножки в острой панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
+      "description": "Kуриные ножки в острой панировке, приготовленные по секретному рецепту ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/xfulgcw4hiooottitnto",
       "category": "Basket",
       "id": 6
@@ -155,7 +155,7 @@
     {
       "name": "3 оригинальных ножек",
       "price": 284,
-      "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
+      "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/plhaq4a9nf3kiktgkbps",
       "category": "Chiken",
       "id": 28
@@ -163,7 +163,7 @@
     {
       "name": "3 острых ножек",
       "price": 284,
-      "description": "Куриные ножки в острой панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
+      "description": "Куриные ножки в острой панировке, приготовленные по секретному рецепту",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/otymhedlrdumokp9ctwi",
       "category": "Chiken",
       "id": 29
@@ -171,7 +171,7 @@
     {
       "name": "2 оригинальные ножки",
       "price": 194,
-      "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
+      "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту .",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ixwqfubig1y8sjzwbmpe",
       "category": "Chiken",
       "id": 30
@@ -179,7 +179,7 @@
     {
       "name": "2 острые ножки",
       "price": 194,
-      "description": "Kуриные ножки в острой панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
+      "description": "Kуриные ножки в острой панировке, приготовленные по секретному рецепту ",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/ntabckk1ejaajgonbuwo",
       "category": "Chiken",
       "id": 31
@@ -187,7 +187,7 @@
     {
       "name": "1оригинальная ножка",
       "price": 99,
-      "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту Полковника Сандерса «11 трав и специй».",
+      "description": "Куриные ножки в оригинальной панировке, приготовленные по секретному рецепту.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/zytt8qgi9n8mob4zgfef",
       "category": "Chiken",
       "id": 32
@@ -211,7 +211,7 @@
     {
       "name": "8 острых стрипсов",
       "price": 429,
-      "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса. Совершенный вкус!",
+      "description": "Нежное куриное филе мы панируем вручную и готовим в ресторане по уникальному рецепту Полковника Сандерса.",
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vp78e5wtnl3ecmf2bzhg",
       "category": "Chiken",
       "id": 35
