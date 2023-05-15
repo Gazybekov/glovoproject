@@ -37,8 +37,6 @@ const ProductContextProvider = ({ children }) => {
       `${JSON_API_PRODUCTS}${window.location.search}`
     );
 
-    console.log(data);
-
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };
 

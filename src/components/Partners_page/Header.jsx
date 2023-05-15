@@ -56,7 +56,7 @@ const Header = () => {
               <span>95%</span>
               <span>Хорошо</span>
             </div>
-            <Link to={"/products"}>
+            <Link to={"/addproducts"}>
               <button>Добавить новый продукт</button>
             </Link>
           </div>
