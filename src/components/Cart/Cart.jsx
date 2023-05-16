@@ -12,7 +12,7 @@ const Cart = () => {
         {" "}
         <img src={astronaut} alt="" />
       </div>
-      <div className="box">
+      <div className="box_box">
         <div className="text_box">
           <div className="text">
             Пока что корзина пуста. Добавленные вами продукты будут отображаться
