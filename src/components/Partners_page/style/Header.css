@@ -422,3 +422,14 @@ ul li:hover {
   font-size: 17px;
   padding-left: 10px;
 }
+
+.btn1 {
+  border: 0;
+  padding: 0 20px;
+  height: 40px;
+  background-color: #49a387;
+  border-radius: 20px;
+  color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+}

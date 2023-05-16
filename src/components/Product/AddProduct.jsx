@@ -1,6 +1,7 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useProducts } from "../../context/ProductContextProvider";
+import "./AddProduct.css";
+import kfc from "../../assets/kfc.png";
 
 const AddProduct = () => {
   const { addProduct } = useProducts();
@@ -28,69 +29,80 @@ const AddProduct = () => {
     }
   };
   return (
-    <>
-      <Box sx={{ width: "30vw", margin: "10vh auto", textAlign: "center" }}>
-        <Typography variant="h4">Новый продукт</Typography>
-        <TextField
-          sx={{ marginBottom: "10px" }}
-          fullWidth
-          id="outlined-basic"
-          label="Картинка продукта"
-          variant="outlined"
-          size="small"
-          name="image"
-          onChange={handleInp}
-        />
-        <TextField
-          sx={{ marginBottom: "10px" }}
-          fullWidth
-          id="outlined-basic"
-          label="Название"
-          variant="outlined"
-          size="small"
-          name="name"
-          onChange={handleInp}
-        />
-        <TextField
-          sx={{ marginBottom: "10px" }}
-          fullWidth
-          id="outlined-basic"
-          label="Цена"
-          variant="outlined"
-          size="small"
-          name="price"
-          onChange={handleInp}
-        />
-        <TextField
-          sx={{ marginBottom: "10px" }}
-          fullWidth
-          id="outlined-basic"
-          label="Описание"
-          variant="outlined"
-          size="small"
-          name="description"
-          onChange={handleInp}
-        />
-        <TextField
-          sx={{ marginBottom: "10px" }}
-          fullWidth
-          id="outlined-basic"
-          label="category"
-          variant="outlined"
-          size="small"
-          name="category"
-          onChange={handleInp}
-        />
-
-        <Button
-          onClick={() => addProduct(product)}
-          fullWidth
-          variant="outlined"
-        >
-          Добавить новый продукт
-        </Button>
-      </Box>
-    </>
+    <div>
+      <div className="glav_div">
+        <div className="logo">
+          <img src={kfc} alt="" />
+        </div>
+        <div>
+          <h2 className="edit_h4" variant="h4">
+            Изменения продукта
+          </h2>
+        </div>
+        <div>
+          <input
+            className="edit_kar"
+            sx={{ marginBottom: "10px" }}
+            fullWidth
+            id="outlined-basic"
+            placeholder="Картинка продукта"
+            variant="outlined"
+            size="small"
+            name="picture"
+            onChange={handleInp}
+          />
+        </div>
+        <div>
+          <input
+            className="edit_nazvanie"
+            sx={{ marginBottom: "10px" }}
+            fullWidth
+            id="outlined-basic"
+            placeholder="Название"
+            variant="outlined"
+            size="small"
+            name="name"
+            onChange={handleInp}
+          />
+        </div>
+        <div>
+          <input
+            className="edit_sena"
+            sx={{ marginBottom: "10px" }}
+            fullWidth
+            id="outlined-basic"
+            placeholder="Цена"
+            variant="outlined"
+            size="small"
+            name="price"
+            onChange={handleInp}
+          />
+        </div>
+        <div>
+          <input
+            className="edit_opi"
+            sx={{ marginBottom: "10px" }}
+            fullWidth
+            id="outlined-basic"
+            placeholder="Описание"
+            variant="outlined"
+            size="small"
+            name="description"
+            onChange={handleInp}
+          />
+        </div>
+        <div>
+          <button
+            className="edit_btn"
+            onClick={() => addProduct(product)}
+            fullWidth
+            variant="outlined"
+          >
+            Добавить новый продукт
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 

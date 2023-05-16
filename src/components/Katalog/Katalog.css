@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.Nav_glovo {
-  background-color: #f6c45d;
-  display: flex;
-  justify-content: space-between;
-}
 
 * {
   margin: 0;
@@ -24,20 +13,36 @@
   display: flex;
   justify-content: space-between;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Nav_glovo {
+  background-color: #f6c45d;
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav_img {
   padding-top: 50px;
   width: 20%;
   padding-left: 120px;
 }
+
 .nav_button {
   border: 0;
-  margin-top: 50px;
+  margin-top: 73px;
   border-radius: 30px;
   width: 7%;
   margin-right: 120px;
   background-color: #479e83;
   color: white;
+  height: 60px;
 }
+
 .Nav_glovo input {
   text-align: center;
   width: 24%;
@@ -82,11 +87,205 @@
 }
 
 .card-container {
+  /* max-width: 70%; */
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 20px;
 }
 
-.card {
-  flex-basis: calc(33.33% - 20px);
+.card1 {
+  display: flex;
+  flex-direction: column;
   margin: 10px;
+  width: calc(50% - 20px);
+  align-items: center;
+}
+
+.card1 img {
+  width: 100%;
+}
+
+.card1 h2,
+.card1 p {
+  text-align: center;
+}
+
+.card1 h2 {
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.card1 p {
+  max-width: 300px;
+  font-size: 16px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.footer {
+  background-color: #1d1d1d;
+  margin-top: 200px;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.img {
+  padding-left: 8%;
+}
+
+.footer_glovo1 {
+  padding-top: 28px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 86%;
+  padding-left: 20%;
+}
+
+.footer_glovo1 div {
+  color: white;
+}
+
+.footer_glovo1 h2 {
+  font-size: 19px;
+}
+
+.footer_glovo1 h4 {
+  font-size: 13px;
+  padding-top: 30px;
+}
+
+.footer2 {
+  background-color: #1d1d1d;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.footer2 div {
+  padding-left: 5%;
+  padding-top: 40px;
+  color: white;
+}
+
+.footer_glovo2 h4 {
+  padding-top: 12px;
+}
+
+#e3 {
+  display: flex;
+  padding-left: 2px;
+}
+
+#e3 h4 {
+  padding-top: 6px;
+  padding-left: 9px;
+}
+
+.hero {
+  margin-left: 9%;
+  margin-top: 30px;
+  width: 250px;
+  height: 40px;
+  color: white;
+  background-color: #1d1d1d;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .nav_img,
+  .nav_button {
+    display: none;
+  }
+
+  .Nav_glovo input {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card p {
+    padding-left: 0;
+  }
+
+  /* .footer_glovo1 {
+    flex-direction: column;
+  }
+
+  .footer_glovo1 div {
+    margin-bottom: 20px;
+  }
+
+  .footer_glovo1 h2,
+  .footer_glovo1 h4 {
+    padding: 0;
+  }
+
+  .footer2 div {
+    padding-left: 0;
+  }
+} */
+  .footer_glovo1 {
+    padding-left: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .con,
+  .con2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .nav_img,
+  .nav_button {
+    padding-left: 20px;
+    margin-right: 20px;
+  }
+
+  .nav_button,
+  .nav2_button {
+    width: 15%;
+  }
+
+  .osortiment {
+    margin-left: 5%;
+  }
+
+  .ruka_btn img {
+    width: 200px;
+  }
+
+  .footer_glovo1 {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav_img,
+  .nav_button {
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  .nav_button,
+  .nav2_button {
+    width: 20%;
+  }
+
+  .osortiment {
+    margin-left: 2%;
+  }
+
+  .ruka_btn img {
+    width: 150px;
+  }
+
+  .footer_glovo1 {
+    padding-left: 5%;
+  }
 }

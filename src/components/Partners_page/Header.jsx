@@ -23,7 +23,6 @@ const Header = () => {
       </div>
       <div className="logo_box">
         <Link to={"/"}>
-          {" "}
           <img
             src="https://res.cloudinary.com/glovoapp/image/fetch/f_svg,q_auto:low/https://glovoapp.com/images/glovo-white.svg"
             alt=""
@@ -61,7 +60,7 @@ const Header = () => {
               <span>Хорошо</span>
             </div>
             <Link to={"/addproducts"}>
-              <button>Добавить новый продукт</button>
+              <button className="btn1">Добавить новый продукт</button>
             </Link>
           </div>
         </div>
