@@ -447,6 +447,10 @@ ul li:hover {
   z-index: 9999; /* Adjust the z-index value as needed */
 }
 /* Second header login */
+.profile_header button {
+  background: transparent;
+  border: none;
+}
 .profile img {
   width: 30px;
   height: 30px;
@@ -459,4 +463,98 @@ ul li:hover {
   display: flex;
   width: 23%;
   justify-content: space-between;
+}
+
+/* profile card */
+
+.ReactModal__Overlay {
+  background-color: transparent;
+}
+
+.login_box {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100px;
+  right: 110px;
+  bottom: 0;
+  align-items: center;
+  justify-content: end;
+  z-index: 9999;
+}
+.login_box button {
+  background: transparent;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #00a082ff;
+  color: #fff;
+  border-radius: 30px;
+  margin: 20px 0;
+  padding: 10px 22px;
+}
+.triangle {
+  border: 16px solid transparent;
+  border-bottom: 16px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 70px;
+  right: 152px;
+}
+
+.menu_box {
+  overflow-y: scroll;
+  height: 90%;
+  background-color: #ffff;
+  width: 440px;
+  border-radius: 14px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  bottom: 0;
+  z-index: 9999;
+}
+.triagle_menu {
+  border: 16px solid transparent;
+  border-bottom: 16px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 70px;
+  right: 152px;
+}
+.ReactModal__Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.custom-modal_registr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.ReactModal__Overlay .ReactModal__Overlay--after-open .custom-overlay {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  height: 2000px;
+}
+
+.ReactModalPortal {
+  overflow-y: hidden;
 }

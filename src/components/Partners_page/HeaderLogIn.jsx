@@ -6,9 +6,14 @@ import { Link } from "react-router-dom";
 import "../Register/Register.css";
 import { useAuth } from "../../context/AuthContextProvider";
 import profile from "./img/header_img/2867892_emotion_sad_icon.svg";
+import Modal from "react-modal";
 import menu from "./img/header_img/2867922_menu_icon.svg";
+import { useFavorite } from "../../context/FavoriteContextProvider";
+import CardItem from "./CardItem";
+
 const HeaderLogIn = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpenMenu, setIsModalOpenMenu] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -18,38 +23,26 @@ const HeaderLogIn = () => {
     setIsModalOpen(false);
   };
 
-  const {
-    email,
-    password,
-    user,
-    isLoggedIn,
-    emailError,
-    passwordError,
-    hasAccount,
-    setEmail,
-    setPassword,
-    setHasAccount,
-    handleSignUp,
-    handleLogin,
-  } = useAuth();
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-
-    // Если пользователь уже зарегистрирован, вызываем функцию handleLogin
-    if (isLoggedIn) {
-      handleLogin(closeModal); // Передаем функцию closeModal для закрытия модального окна
-    } else {
-      // В противном случае, вызываем функцию handleSignUp
-      handleSignUp(closeModal); // Передаем функцию closeModal для закрытия модального окна
-    }
+  const openModalMenu = () => {
+    setIsModalOpenMenu(true);
   };
 
+  const closeModalMenu = () => {
+    setIsModalOpenMenu(false);
+  };
+
+  const { user, handleLogout } = useAuth();
+  const { removeFromFavorites, addToFavorites, favorites, setFavorites } =
+    useFavorite();
+
+  // для модалки
+  const savedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+  const displayedFavorites = favorites.filter((item) =>
+    savedFavorites.some((savedItem) => savedItem !== item)
+  );
+
+  console.log(savedFavorites);
   return (
     <div>
       <div className="logo_box">
@@ -65,12 +58,12 @@ const HeaderLogIn = () => {
             <p>Добавьте свой адрес</p>
             <img src={arrow} alt="" className="img_arrow" />
           </div>
-          <div className="profile">
+          <button className="profile" onClick={openModal}>
             <img src={profile} alt="" />
-          </div>
-          <div className="menu">
+          </button>
+          <button className="menu" onClick={openModalMenu}>
             <img src={menu} alt="" />
-          </div>
+          </button>
         </div>
       </div>
       <div className="banner">
@@ -78,10 +71,11 @@ const HeaderLogIn = () => {
           src="https://res.cloudinary.com/glovoapp/q_30,h_225,f_auto/e_blur:400/Stores/g0tffeh47dogqnmree1m"
           alt=""
           className="kfcBanner"
+          style={{ height: "340px" }}
         />
       </div>
       <div className="second-part-of-header">
-        <div className="store-info">
+        <div className="store-info" style={{ top: "70px" }}>
           <h1>KFC</h1>
           <div className="info">
             <div className="scooter_section">
@@ -102,6 +96,46 @@ const HeaderLogIn = () => {
           </div>
         </div>
       </div>
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        overlayClassName="custom-overlay"
+        className="custom-modal"
+      >
+        <div className="triangle"></div>
+        <div className="login_box">
+          <p>Привет {user.email} !</p>
+          <button onClick={handleLogout}>Выйти</button>
+        </div>
+      </Modal>
+      {/* <Modal
+        isOpen={isModalOpenMenu}
+        onRequestClose={closeModalMenu}
+        overlayClassName="custom-overlay"
+        className="custom-modal"
+      >
+        <div className="menu_box">
+          <div className="triagle_menu"> </div>
+          <p>ывыйди плитз</p>
+          {favorites.map((item) => (
+            <p>{item.name}</p>
+          ))}
+        </div>
+      </Modal> */}
+      <Modal
+        isOpen={isModalOpenMenu}
+        onRequestClose={closeModalMenu}
+        overlayClassName="custom-overlay"
+        className="custom-modal"
+      >
+        <div className="menu_box">
+          <div className="triagle_menu"> </div>
+          <p>Работай плиз</p>
+          {displayedFavorites.map(
+            (item, index) => item && <CardItem key={index} item={item} />
+          )}
+        </div>
+      </Modal>
     </div>
   );
 };

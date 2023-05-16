@@ -5,7 +5,7 @@ import fire from "../fire";
 export const authContext = createContext();
 export const useAuth = () => useContext(authContext);
 
-const AuthContextProvider = ({ children }) => {
+const AuthContextProvider = ({ children } ) => {
   // состояния для хранения данных
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
@@ -14,6 +14,7 @@ const AuthContextProvider = ({ children }) => {
   const [passwordError, setPasswordError] = useState("");
   const [hasAccount, setHasAccount] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const navigate = useNavigate();
 
@@ -26,36 +27,14 @@ const AuthContextProvider = ({ children }) => {
     setPasswordError("");
   };
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+    document.body.style.overflow = "";
+  };
+
+
   
-  // const handleLogin = (closeModal) => {
-  //   clearErrors();
-  //   fire
-  //     .auth()
-  //     .signInWithEmailAndPassword(email, password)
-  //     .then(() => {
-  //       setIsLoggedIn(true);
-  //       closeModal(); // Закрыть модальное окно после успешного входа
-  //     })
-  //     .catch((err) => {
-  //       // обработка ошибок
-  //     });
-  // };
-  
-  // const handleSignUp = (closeModal) => {
-  //   clearErrors();
-  //   fire
-  //     .auth()
-  //     .createUserWithEmailAndPassword(email, password)
-  //     .then(() => {
-  //       closeModal(); // Закрыть модальное окно после успешной регистрации
-  //       navigate("/kfc"); // переход на home, в случае если регистрация прошла успешно
-  //     })
-  //     .catch((err) => {
-  //       // обработка ошибок
-  //     });
-  // };
-  
-  const handleLogin = (closeModal) => {
+  const handleLogin = () => {
     clearErrors();
     fire
       .auth()
@@ -69,7 +48,7 @@ const AuthContextProvider = ({ children }) => {
       });
   };
   
-  const handleSignUp = (closeModal) => {
+  const handleSignUp = () => {
     clearErrors();
     fire
       .auth()
@@ -82,6 +61,7 @@ const AuthContextProvider = ({ children }) => {
         // Обработка ошибок
       });
   };
+  
   
 
   const handleLogout = () => {
@@ -106,7 +86,7 @@ const AuthContextProvider = ({ children }) => {
     authListener();
   }, []);
 
-  console.log(user);
+
 
   const values = {
     email,
@@ -116,14 +96,14 @@ const AuthContextProvider = ({ children }) => {
     emailError,
     passwordError,
     hasAccount,
-
+    isLoggedIn,
     setEmail,
     setPassword,
     setHasAccount,
-
+    setIsLoggedIn,
     handleSignUp,
     handleLogin,
-    handleLogout,
+    handleLogout,closeModal,setIsModalOpen,isModalOpen,
   };
 
   return (
