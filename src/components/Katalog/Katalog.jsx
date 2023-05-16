@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Katalog.css";
 import Glovo from "../../assets/glovo.svg";
+import { Link } from "react-router-dom";
 
 const Katalog = () => {
+  const [value1, onChange1] = useState(48000);
+  const [value2, onChange2] = useState(3000);
+  const handlePlusClick1 = () => {
+    onChange1(value1 + 1);
+  };
+  const handleMinusClick1 = () => {
+    onChange2(value2 + 1);
+  };
+
   const cards = [
     {
       title: "KFC",
@@ -14,14 +24,9 @@ const Katalog = () => {
       title: "Эки Дос",
       image:
         "https://res.cloudinary.com/glovoapp/q_30,f_auto,c_fill,dpr_3.0,h_156,w_351,b_transparent/Stores/tl0c2ctj9a2tirgqzmzr",
-      content: "Заведение «Эки Дос» предлагает большой ассортимент",
+      content: "Заведение «Эки Дос» предлагает ассортимент",
     },
-    {
-      title: "Burger Station",
-      image:
-        "https://res.cloudinary.com/glovoapp/q_30,f_auto,c_fill,dpr_3.0,h_156,w_351,b_transparent/Stores/sricsnh1ekrzpzghcweu",
-      content: "Чтобы заказать доставку из заведения «Burger Station»",
-    },
+
     {
       title: "Times Bar",
       image:
@@ -40,17 +45,12 @@ const Katalog = () => {
         "https://res.cloudinary.com/glovoapp/q_30,f_auto,c_fill,dpr_3.0,h_156,w_351,b_transparent/Stores/llfshhblyy8mrobdlsjj",
       content: "Чтобы заказать доставку из заведения «Point B»",
     },
-    {
-      title: "Malik al Broast",
-      image:
-        "https://res.cloudinary.com/glovoapp/q_30,f_auto,c_fill,dpr_3.0,h_156,w_351,b_transparent/Stores/q7pc0g1pzhrlsydecabz",
-      content: "Чтобы заказать доставку из заведения «Malik al Broast»",
-    },
+
     {
       title: "Mama pizza",
       image:
         "https://res.cloudinary.com/glovoapp/q_30,f_auto,c_fill,dpr_3.0,h_156,w_351,b_transparent/Stores/bhzopxjqdmpefrgabgli",
-      content: "Заведение «Mama pizza» предлагает большой ассортимент",
+      content: "Заведение «Mama pizza» предлагает ассортимент",
     },
     {
       title: "Burger station",
@@ -93,6 +93,18 @@ const Katalog = () => {
       image:
         "https://res.cloudinary.com/glovoapp/q_30,f_auto,c_fill,dpr_3.0,h_156,w_351,b_transparent/Stores/u6gpnrrebze5pb31fkhc",
       content: "Заведение «Торро Бургер & Борщ» предлагает большой ассортимент",
+    },
+    {
+      title: "Burger Station",
+      image:
+        "https://res.cloudinary.com/glovoapp/q_30,f_auto,c_fill,dpr_3.0,h_156,w_351,b_transparent/Stores/sricsnh1ekrzpzghcweu",
+      content: "Чтобы заказать доставку из заведения «Burger Station»",
+    },
+    {
+      title: "Malik al Broast",
+      image:
+        "https://res.cloudinary.com/glovoapp/q_30,f_auto,c_fill,dpr_3.0,h_156,w_351,b_transparent/Stores/q7pc0g1pzhrlsydecabz",
+      content: "Чтобы заказать доставку из заведения «Malik al Broast»",
     },
   ];
 
@@ -415,10 +427,50 @@ const Katalog = () => {
 
         <div className="card-container">
           {cards.map((card, index) => (
-            <div className="card" key={index}>
+            <div className="card1" key={index}>
               <img src={card.image} alt={`Фото ${index + 1}`} />
               <h2>{card.title}</h2>
-              <p>{card.content}</p>
+              <p>
+                <hr />
+                {index + 1}.{card.content}
+                <span
+                  style={{
+                    paddingLeft: "30px",
+                  }}
+                >
+                  {value1}
+                </span>
+                <button onClick={handlePlusClick1}>
+                  <img
+                    style={{
+                      width: "20px",
+                    }}
+                    src="https://logowik.com/content/uploads/images/940_like_icon.jpg"
+                    alt=""
+                  />
+                </button>
+                <span>{value2}</span>
+                <button onClick={handleMinusClick1}>
+                  <img
+                    style={{
+                      width: "20px",
+                    }}
+                    src="https://fornote.net/wp-content/uploads/2019/02/dislike.png"
+                    alt=""
+                  />
+                </button>
+              </p>
+              <Link to="/komment">
+                <button>
+                  <img
+                    style={{
+                      width: "20px",
+                    }}
+                    src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png"
+                    alt=""
+                  />
+                </button>
+              </Link>
             </div>
           ))}
         </div>

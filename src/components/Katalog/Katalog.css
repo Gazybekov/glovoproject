@@ -94,7 +94,7 @@
   padding-left: 20px;
 }
 
-.card {
+.card1 {
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -102,21 +102,21 @@
   align-items: center;
 }
 
-.card img {
+.card1 img {
   width: 100%;
 }
 
-.card h2,
-.card p {
+.card1 h2,
+.card1 p {
   text-align: center;
 }
 
-.card h2 {
+.card1 h2 {
   font-size: 18px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.card p {
+.card1 p {
   max-width: 300px;
   font-size: 16px;
   font-family: "Libre Baskerville", serif;

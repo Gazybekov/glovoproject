@@ -1,4 +1,6 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
+import "./EditCard.css";
+import kfc from "../../assets/kfc.png";
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -38,10 +40,16 @@ const EditCard = () => {
   };
 
   return (
-    <>
-      <Box sx={{ width: "60vw", margin: "10vh auto", textAlign: "center" }}>
-        <Typography variant="h4">Изменения продукта</Typography>
-        <TextField
+    <div>
+      <div className="glav_div1">
+        <div className="logo">
+          <img src={kfc} alt="" />
+        </div>
+        <h4 className="edit_h5" variant="h4">
+          Изменения продукта
+        </h4>
+        <input
+          className="edit_kar1"
           sx={{ marginBottom: "10px" }}
           fullWidth
           id="outlined-basic"
@@ -52,7 +60,8 @@ const EditCard = () => {
           onChange={handleInp}
           value={product.image || ""}
         />
-        <TextField
+        <input
+          className="edit_nazvanie1"
           sx={{ marginBottom: "10px" }}
           fullWidth
           id="outlined-basic"
@@ -64,7 +73,8 @@ const EditCard = () => {
           value={product.name || ""}
         />
 
-        <TextField
+        <input
+          className="edit_sena1"
           sx={{ marginBottom: "10px" }}
           fullWidth
           id="outlined-basic"
@@ -75,7 +85,8 @@ const EditCard = () => {
           onChange={handleInp}
           value={product.price || ""}
         />
-        <TextField
+        <input
+          className="edit_opi1"
           sx={{ marginBottom: "10px" }}
           fullWidth
           id="outlined-basic"
@@ -87,15 +98,16 @@ const EditCard = () => {
           value={product.description || ""}
         />
 
-        <Button
+        <button
+          className="edit_btn1"
           onClick={() => saveEditedProduct(product)}
           fullWidth
           variant="outlined"
         >
           Save Changes
-        </Button>
-      </Box>
-    </>
+        </button>
+      </div>
+    </div>
   );
 };
 

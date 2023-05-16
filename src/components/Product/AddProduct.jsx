@@ -38,7 +38,7 @@ const AddProduct = () => {
         </div>
         <div>
           <h4 className="edit_h4" variant="h4">
-            Новый продукт
+            Изменения продукта
           </h4>
         </div>
         <div>

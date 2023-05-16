@@ -584,8 +584,6 @@
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vojdxh6x2kdubowpyrk1",
       "category": "Other",
       "id": 78
-<<<<<<< HEAD
-<<<<<<< HEAD
     },
     {
       "picture": "sdg",
@@ -610,7 +608,6 @@
       "description": "es",
       "category": "Other",
       "id": 81
-<<<<<<< HEAD
     },
     {
       "picture": "ewfewfewуцауfdwqdмромор",
@@ -695,12 +692,51 @@
       "price": null,
       "description": "vdsvds",
       "id": 93
-=======
-=======
->>>>>>> 3d37f1898e990f28e75f18c8eb92d379d30c6279
->>>>>>> 9500ec0b6e2978af9f8378436db395e2d8a95eae
-=======
->>>>>>> 920e0d09f7fa9678dd3f458ca9e5e6fd101e5c7d
+    },
+    {
+      "image": "",
+      "name": "xfgchvjbik",
+      "price": null,
+      "description": "tycguhij",
+      "category": "",
+      "picture": "dfghjkl",
+      "id": 94
+    },
+    {
+      "image": "",
+      "name": "xfgchvjbik",
+      "price": null,
+      "description": "tycguhij",
+      "category": "",
+      "picture": "dfghjkl",
+      "id": 95
+    },
+    {
+      "image": "",
+      "name": "xfgchvjbik",
+      "price": null,
+      "description": "tycguhij",
+      "category": "",
+      "picture": "dfghjkl",
+      "id": 96
+    },
+    {
+      "image": "",
+      "name": "swbjqkdbew",
+      "price": 11,
+      "description": "few",
+      "category": "",
+      "picture": "qwer",
+      "id": 97
+    },
+    {
+      "image": "",
+      "name": "swbjqkdbew",
+      "price": 11,
+      "description": "few",
+      "category": "",
+      "picture": "qwer",
+      "id": 98
     }
   ]
 }

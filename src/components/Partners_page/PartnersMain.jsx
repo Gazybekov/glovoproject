@@ -9,6 +9,7 @@ import CartFull from "../Cart/CartFull";
 
 const PartnersMain = () => {
   const { cart } = useCart();
+  console.log(cart);
   return (
     <div>
       <Header />
