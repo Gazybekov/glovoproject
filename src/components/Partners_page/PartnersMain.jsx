@@ -23,7 +23,7 @@ const PartnersMain = () => {
 
       <div className="store-wrapper">
         <StoreSection filters={filters} />
-        {cart.products.length === 0 ? <Cart /> : <CartFull />}
+        {cart.products.length == 0 ? <Cart /> : <CartFull />}
       </div>
     </div>
   );
