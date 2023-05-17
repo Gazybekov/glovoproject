@@ -7,6 +7,8 @@ import { useProducts } from "../../context/ProductContextProvider";
 import { useEffect, useState } from "react";
 import { Box, Grid, Pagination } from "@mui/material";
 import { useSearchParams } from "react-router-dom";
+import { ADMIN } from "../../helpers/const";
+import { useAuth } from "../../context/AuthContextProvider";
 
 const StoreSection = () => {
   const { getProducts, state, searchResult } = useProducts();
@@ -41,7 +43,7 @@ const StoreSection = () => {
     const end = begin + itemsPerPage;
     return filteredProducts.slice(begin, end);
   }
-  // esarch
+  // search
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState(searchParams.get("q") || "");
 
@@ -51,6 +53,10 @@ const StoreSection = () => {
       q: search,
     });
   }, [search]);
+
+  const {
+    user: { email },
+  } = useAuth();
 
   return (
     <>
@@ -87,32 +93,43 @@ const StoreSection = () => {
             />
           </div>
         </div>
-
-        <Grid item md={9}>
-          <Box
-            sx={{
-              display: "flex",
-              flexWrap: "wrap",
-              my: "2rem",
-              justifyContent: "space-evenly",
-            }}
-          >
-            {currentData().length > 0 ? (
-              currentData().map((product) => (
+        {email === ADMIN ? (
+          <Grid item md={9}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                my: "2rem",
+                justifyContent: "space-evenly",
+              }}
+            >
+              {currentData().length > 0 ? (
+                currentData().map((product) => (
+                  <CardItem key={product.id} item={product} />
+                ))
+              ) : (
+                <p>No products available</p>
+              )}
+            </Box>
+            <Pagination
+              count={count}
+              page={page}
+              onChange={handleChange}
+              variant="outlined"
+              color="secondary"
+            />
+          </Grid>
+        ) : (
+          <div className="card_wrapper">
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product) => (
                 <CardItem key={product.id} item={product} />
               ))
             ) : (
               <p>No products available</p>
             )}
-          </Box>
-          <Pagination
-            count={count}
-            page={page}
-            onChange={handleChange}
-            variant="outlined"
-            color="secondary"
-          />
-        </Grid>
+          </div>
+        )}
       </div>
     </>
   );

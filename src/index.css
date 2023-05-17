@@ -17,3 +17,6 @@ li {
   font-family: "Instrument Sans", sans-serif;
   list-style: none;
 }
+body {
+  background-color: white !important;
+}
