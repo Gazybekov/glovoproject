@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContextProvider";
 import "./Done.css";
-
 import kfc from "../../assets/kfc.png";
 
 const Done = () => {
@@ -22,7 +21,7 @@ const Done = () => {
           </div>
           <div>
             {cart.products.map((item) => (
-              <div style={{ border: "20px" }}>
+              <div style={{ textAlign: "start" }}>
                 <div
                   style={{
                     color: "black",
