@@ -108,7 +108,6 @@ const Header = () => {
 
       <Modal
         isOpen={isModalOpen}
-        appElement={document.getElementById("app")}
         onRequestClose={closeModal}
         overlayClassName="custom-overlay"
         className="custom-modal_registr"
@@ -117,7 +116,7 @@ const Header = () => {
         <div className="main_box">
           <div className="box">
             {hasAccount ? (
-              <div id="madal_registration">
+              <div>
                 <div className="box_h2">
                   <h2>Войти в Glovo</h2>
                 </div>
@@ -132,7 +131,7 @@ const Header = () => {
                 </div>
               </div>
             ) : (
-              <div id="madal_registration">
+              <div>
                 <div className="box_h2">
                   <h2>Зарегистрироваться в Glovo</h2>
                 </div>

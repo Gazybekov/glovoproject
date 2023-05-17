@@ -10,8 +10,11 @@ export const cartContext = createContext();
 export const useCart = () => useContext(cartContext);
 
 const INIT_STATE = {
-  cart: JSON.parse(localStorage.getItem("cart")),
-  cartLength: getCountProductsInCart(),
+  cart: {
+    products: [],
+    totalPrice: 0,
+  },
+  cartLength: 0,
 };
 
 function reducer(state = INIT_STATE, action) {
@@ -31,108 +34,33 @@ const CartContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
   const getCart = () => {
-    // достаем данные из localstorage под ключом cart
     let cart = JSON.parse(localStorage.getItem("cart"));
 
-    // делаем проверку на то, что cart существует, если его в хранилище нет, то добавляем под ключом cart объект
     if (!cart) {
-      localStorage.setItem(
-        "cart",
-        JSON.stringify({
-          products: [],
-          totalPrice: 0,
-        })
-      );
       cart = {
         products: [],
         totalPrice: 0,
       };
+      localStorage.setItem("cart", JSON.stringify(cart));
     }
 
-    // обновление состояние корзины
     dispatch({
       type: CART.GET_CART,
       payload: cart,
     });
   };
 
-  // const addProductToCart = (product) => {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-
-  //   // проверка на существование cart
-  //   if (!cart) {
-  //     cart = { products: [], totalPrice: 0 };
-  //   }
-  //   // формирование продукта, который будет хранится в корзине
-  //   let newProduct = {
-  //     item: product, // сам продукт
-  //     count: 1, // кол-во данного продукта
-  //     subPrice: +product.price, // стоимость за 1 шт.
-  //   };
-
-  //   // проверка на то, содержится ли уже в корзине продукт, который хотим добавить
-  //   let productToFind = cart.products.filter(
-  //     (elem) => elem.item.id === product.id
-  //   );
-
-  //   if (productToFind.length === 0) {
-  //     cart.products.push(newProduct); // добавляем продукт, если его не было в корзине
-  //   } else {
-  //     cart.products = cart.products.filter(
-  //       (elem) => elem.item.id != product.id // удаляем, если был
-  //     );
-  //   }
-  //   // пересчитываем общую стоимость корзины, т.к выше изменилось кол-во товаров в корзине
-  //   cart.totalPrice = calcTotalPrice(cart.products);
-
-  //   // помещаем одновленные данные в localStorage
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-  //   //обновляем состояние
-  //   dispatch({ type: CART.GET_CART, payload: cart });
-  // }
-
-  // const addProductToCart = (product) => {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-
-  //   if (!cart) {
-  //     cart = { products: [], totalPrice: 0 };
-  //   }
-
-  //   let newProduct = {
-  //     item: product,
-  //     count: 1,
-  //     subPrice: +product.price,
-  //   };
-
-  //   let productToFind = cart.products.filter(
-  //     (elem) => elem.item.id === product.id
-  //   );
-
-  //   if (productToFind.length === 0) {
-  //     cart.products.push(newProduct);
-  //   } else {
-  //     cart.products = cart.products.filter(
-  //       (elem) => elem.item.id !== product.id
-  //     );
-  //   }
-
-  //   cart.totalPrice = calcTotalPrice(cart.products);
-
-  //   localStorage.setItem("cart", JSON.stringify(cart)); // Update localStorage
-
-  //   dispatch({ type: CART.GET_CART, payload: cart });
-  // };
-
   const addProductToCart = (product) => {
     let cart = JSON.parse(localStorage.getItem("cart"));
 
     if (!cart) {
-      cart = { products: [], totalPrice: 0 };
+      cart = {
+        products: [],
+        totalPrice: 0,
+      };
     }
 
-    let productToFind = cart.products.find(
-      (elem) => elem.item.id === product.id
-    );
+    let productToFind = cart.products.find((elem) => elem.item.id === product.id);
 
     if (!productToFind) {
       let newProduct = {
@@ -165,68 +93,12 @@ const CartContextProvider = ({ children }) => {
     let cart = JSON.parse(localStorage.getItem("cart"));
 
     if (cart) {
-      let newCart = cart.products.filter((elem) => elem.item.id == id);
-      return newCart.length > 0 ? true : false;
+      let newCart = cart.products.filter((elem) => elem.item.id === id);
+      return newCart.length > 0;
     }
+
+    return false;
   };
-
-  // const changeProductCount = (count,id) => {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-
-  //   cart.products = cart.products.map((product) => {
-  //     if(product.item.id = id) {
-  //       product.count = count;
-  //       product.subPrice = calcTotalPrice(product);
-  //     }
-  //     return product;
-  //   });
-  //   cart.totalPrice = calcTotalPrice(cart.products);
-  //   localStorage.setItem("cart",JSON.stringify(cart));
-  //   dispatch({
-  //     type:CART.GET_CART,
-  //     payload:cart,
-  //   });
-  // };
-
-  // const changeProductCount = (count, id) => {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-
-  //   cart.products = cart.products.map((product) => {
-  //     if (product.item.id === id) {
-  //       product.count = count;
-  //       product.subPrice = calcTotalPrice([product]);
-  //     }
-  //     return product;
-  //   });
-
-  //   cart.totalPrice = calcTotalPrice(cart.products);
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-
-  //   dispatch({
-  //     type: CART.GET_CART,
-  //     payload: cart,
-  //   });
-  // };
-
-  // const changeProductCount = (count, id) => {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-
-  //   cart.products = cart.products.map((product) => {
-  //     if (product.item.id === id) {
-  //       product.count = count;
-  //       product.subPrice = calcTotalPrice([product]);
-  //     }
-  //     return product;
-  //   });
-
-  //   cart.totalPrice = calcTotalPrice(cart.products); // Recalculate totalPrice based on the updated cart.products array
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-
-  //   dispatch({
-  //     type: CART.GET_CART,
-  //     payload: cart,
-  //   });
-  // };
 
   const changeProductCount = (count, id, subPrice) => {
     let cart = JSON.parse(localStorage.getItem("cart"));
@@ -263,14 +135,19 @@ const CartContextProvider = ({ children }) => {
 
   const values = {
     addProductToCart,
+   
     getCart,
     checkProductInCart,
     changeProductCount,
     deleteCartProduct,
     calcTotalPrice,
     cart: state.cart,
+    cartLength: state.cartLength,
   };
-  return <cartContext.Provider value={values}>{children}</cartContext.Provider>;
+
+  return (
+    <cartContext.Provider value={values}>{children}</cartContext.Provider>
+  );
 };
 
 export default CartContextProvider;

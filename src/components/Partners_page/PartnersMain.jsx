@@ -12,6 +12,7 @@ const PartnersMain = () => {
   const { cart } = useCart();
   const { user } = useAuth(); // Используем isLoggedIn из контекста AuthContextProvider
   const [filters, setFilters] = useState({ category: "all" });
+  console.log(cart);
 
   const handleFilterChange = (category) => {
     setFilters({ category });
