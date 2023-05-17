@@ -17,6 +17,8 @@ const PartnersMain = () => {
     setFilters({ category });
   };
 
+  console.log(cart.product);
+
   return (
     <>
       <div>
@@ -24,7 +26,7 @@ const PartnersMain = () => {
 
         <div className="store-wrapper">
           <StoreSection filters={filters} />
-          {cart.products.length == 0 ? <Cart /> : <CartFull />}
+          {cart && cart.products.length === 0 ? <Cart /> : <CartFull />}
         </div>
       </div>
     </>
