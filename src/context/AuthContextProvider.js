@@ -5,7 +5,7 @@ import fire from "../fire";
 export const authContext = createContext();
 export const useAuth = () => useContext(authContext);
 
-const AuthContextProvider = ({ children } ) => {
+const AuthContextProvider = ({ children }) => {
   // состояния для хранения данных
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
@@ -32,8 +32,6 @@ const AuthContextProvider = ({ children } ) => {
     document.body.style.overflow = "";
   };
 
-
-  
   const handleLogin = () => {
     clearErrors();
     fire
@@ -47,7 +45,7 @@ const AuthContextProvider = ({ children } ) => {
         // Обработка ошибок
       });
   };
-  
+
   const handleSignUp = () => {
     clearErrors();
     fire
@@ -61,8 +59,6 @@ const AuthContextProvider = ({ children } ) => {
         // Обработка ошибок
       });
   };
-  
-  
 
   const handleLogout = () => {
     fire.auth().signOut();
@@ -86,8 +82,6 @@ const AuthContextProvider = ({ children } ) => {
     authListener();
   }, []);
 
-
-
   const values = {
     email,
     password,
@@ -103,12 +97,13 @@ const AuthContextProvider = ({ children } ) => {
     setIsLoggedIn,
     handleSignUp,
     handleLogin,
-    handleLogout,closeModal,setIsModalOpen,isModalOpen,
+    handleLogout,
+    closeModal,
+    setIsModalOpen,
+    isModalOpen,
   };
 
-  return (
-    <authContext.Provider value={values}>{children}</authContext.Provider>
-  );
+  return <authContext.Provider value={values}>{children}</authContext.Provider>;
 };
 
 export default AuthContextProvider;

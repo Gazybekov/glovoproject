@@ -95,7 +95,7 @@ const HeaderLogIn = () => {
               <span>95%</span>
               <span>Хорошо</span>
             </div>
-            {email == ADMIN ? (
+            {email === ADMIN ? (
               <Link to={"/addproducts"}>
                 <button>Добавить новый продукт</button>
               </Link>

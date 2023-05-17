@@ -75,8 +75,9 @@ const ProductContextProvider = ({ children }) => {
   //filter
   const location = useLocation();
 
+ 
   const fetchByParams = async (query, value) => {
-    const search = new URLSearchParams(window.location.search);
+    const search = new URLSearchParams(location.search);
 
     if (value === "all") {
       search.delete(query);
@@ -84,8 +85,14 @@ const ProductContextProvider = ({ children }) => {
       search.set(query, value);
     }
 
+    const existingParams = new URLSearchParams(location.search);
+    existingParams.forEach((value, key) => {
+      if (!search.has(key)) {
+        search.set(key, value);
+      }
+    });
+
     const url = `${location.pathname}?${search.toString()}`;
-    // console.log(url);
     navigate(url);
   };
 

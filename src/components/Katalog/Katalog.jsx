@@ -497,7 +497,7 @@ const Katalog = () => {
                     </button>
                   </div>
                   <Link
-                    to="/komment"
+                    to="/comment"
                     style={{ marginLeft: "10px", marginTop: "10px" }}
                   >
                     <button

@@ -6,18 +6,30 @@ import square from "./img/header_img/sections-square.svg";
 import { useProducts } from "../../context/ProductContextProvider";
 import { useEffect, useState } from "react";
 import { Box, Grid, Pagination } from "@mui/material";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useLocation, useNavigate } from "react-router-dom";
 import { ADMIN } from "../../helpers/const";
 import { useAuth } from "../../context/AuthContextProvider";
 
 const StoreSection = () => {
-  const { getProducts, state, searchResult } = useProducts();
+  const { getProducts, state, searchResult, fetchByParams } = useProducts();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   // !filter
 
   const [filterValue, setFilterValue] = useState("");
   const products = state.products;
-  const categories = [...new Set(products.map((product) => product.category))];
+  const categories = [
+    "Баскет",
+    "Курица",
+    "Сэндвич",
+    "Гарнир",
+    "Напитки",
+    "Агрессивные СОУСЫ, ДОПОЛНИТЕЛЬНЫЕ ПРОДУКТЫ",
+  ]; // Ручное добавление категорий
+  const handleFilterChange = (value) => {
+    setFilterValue(value);
+  };
 
   useEffect(() => {
     getProducts();
@@ -58,6 +70,17 @@ const StoreSection = () => {
     user: { email },
   } = useAuth();
 
+  const handleSearchChange = (e) => {
+    setSearch(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    const searchParams = new URLSearchParams(location.search);
+    searchParams.set("q", search);
+    navigate(`${location.pathname}?${searchParams.toString()}`);
+  };
+
   return (
     <>
       <div className="store__page">
@@ -68,11 +91,11 @@ const StoreSection = () => {
         <div className="filter">
           <ul>
             <li>
-              <button onClick={() => setFilterValue("")}>Все</button>
+              <button onClick={() => handleFilterChange("")}>Все</button>
             </li>
             {categories.map((category) => (
               <li key={category}>
-                <button onClick={() => setFilterValue(category)}>
+                <button onClick={() => handleFilterChange(category)}>
                   {category}
                 </button>
               </li>
@@ -83,14 +106,18 @@ const StoreSection = () => {
       <div className="store-section">
         <div className="search-input">
           <div className="search">
-            <img src={searchh} alt="" />
-            <input
-              type="text"
-              placeholder="Искать в KFC"
-              className="search-input__field"
-              onChange={(e) => setSearch(e.target.value)}
-              value={search}
-            />
+            <form onSubmit={handleSearchSubmit} style={{ display: "flex" }}>
+              <button type="submit" className="search-input__button">
+                <img src={searchh} alt="" />
+              </button>
+              <input
+                type="text"
+                placeholder="Искать в KFC"
+                className="search-input__field"
+                onChange={(e) => handleSearchChange(e)}
+                value={search}
+              />
+            </form>
           </div>
         </div>
         {email === ADMIN ? (

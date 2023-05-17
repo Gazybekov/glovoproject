@@ -191,10 +191,6 @@
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
   .nav_img,
   .nav_button {
     display: none;

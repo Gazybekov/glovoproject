@@ -4,7 +4,7 @@
 
 .glav_div {
   text-align: center;
-  width: 600px;
+  width: 650px;
   margin-left: 30%;
   border-radius: 50px;
   background-color: #f6c45d;
@@ -33,4 +33,10 @@
 
 .done2 {
   width: 50%;
+}
+
+.div10 {
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
 }

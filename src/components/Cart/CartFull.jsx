@@ -13,6 +13,7 @@ export default function CartFull() {
     changeProductCount,
     deleteCartProduct,
     addProductToCart,
+    calcTotalPrice,
   } = useCart();
 
   React.useEffect(() => {

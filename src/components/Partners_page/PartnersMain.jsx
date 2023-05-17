@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import Header from "./Header";
-import HeaderLogIn from "./HeaderLogIn";
+
 import StoreSection from "./StoreSection";
+import Header from "../Partners_page/Header";
 import "./style/Header.css";
 import Cart from "../Cart/Cart";
 import { useCart } from "../../context/CartContextProvider";
 import CartFull from "../Cart/CartFull";
 import { useAuth } from "../../context/AuthContextProvider";
+import HeaderLogIn from "../Partners_page/HeaderLogIn";
 
 const PartnersMain = () => {
   const { cart } = useCart();

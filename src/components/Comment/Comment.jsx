@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import "./Komment.css";
+import { useAuth } from "../../context/AuthContextProvider";
+import "./Comment.css";
 
-const Komment = () => {
+const Comment = () => {
   const [messages, setMessages] = useState([]);
+  const { email, user } = useAuth();
+
   const [newMessage, setNewMessage] = useState("");
 
   const handleInputChange = (e) => {
@@ -28,6 +31,10 @@ const Komment = () => {
                   alt="Avatar"
                 />
               </div>
+              <div>
+                <h2>{user.email}</h2>
+                <h5>{Date()}</h5>
+              </div>
               <div className="content">{message}</div>
             </div>
           ))}
@@ -46,4 +53,4 @@ const Komment = () => {
   );
 };
 
-export default Komment;
+export default Comment;
