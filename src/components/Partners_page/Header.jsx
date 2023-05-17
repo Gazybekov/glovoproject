@@ -131,6 +131,7 @@ const Header = () => {
         onRequestClose={closeModal}
         overlayClassName="custom-overlay"
         className="custom-modal_registr"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
       >
         <div className="main_box">
           <div className="box">
@@ -188,10 +189,16 @@ const Header = () => {
               <div id="email-error">{emailError}</div>
             </div>
             <div className="inp3">
-              <img
-                src="https://png.pngtree.com/png-vector/20190917/ourmid/pngtree-circle-password-icon-vectors-png-image_1738057.jpg"
-                alt=""
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="25"
+                height="25"
+                viewBox="0 0 32 32"
+              >
+                <path d="M 16 3 C 12.15625 3 9 6.15625 9 10 L 9 13 L 6 13 L 6 29 L 26 29 L 26 13 L 23 13 L 23 10 C 23 6.15625 19.84375 3 16 3 Z M 16 5 C 18.753906 5 21 7.246094 21 10 L 21 13 L 11 13 L 11 10 C 11 7.246094 13.246094 5 16 5 Z M 8 15 L 24 15 L 24 27 L 8 27 Z"></path>
+              </svg>
               <input
                 type="password"
                 placeholder="Пароль"

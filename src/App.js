@@ -7,6 +7,7 @@ import PartnersMain from "./components/Partners_page/PartnersMain";
 import EditCardPage from "./components/Product/EditCardPage";
 import CardForm from "./components/Product/CardForm";
 import Register from "./components/Register/Register";
+import Payment from "./components/Payment/Payment";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/edit/:id" element={<EditCardPage />} />
         <Route path="/form" element={<CardForm />} />
         <Route path="/registr" element={<Register/>} />
+        <Route path="/pay" element={<Payment></Payment>} />
       </Routes>
     </>
   );
