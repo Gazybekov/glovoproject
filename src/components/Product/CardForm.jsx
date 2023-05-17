@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Link } from "react-router-dom";
 import "./CardForm.scss";
 
 // const CardForm = () => {
@@ -372,12 +373,15 @@ class CardForm extends React.Component {
                 defaultValue={cardCvv}
               />
             </div>
-            <button
-              className={`lg-input ${canSubmit ? "disabled" : ""}`}
-              disabled={canSubmit}
-            >
-              Submit
-            </button>
+
+            <Link to={"/done"}>
+              <button
+                className={`lg-input ${canSubmit ? "disabled" : ""}`}
+                disabled={canSubmit}
+              >
+                Submit
+              </button>
+            </Link>
           </form>
         </div>
       </div>

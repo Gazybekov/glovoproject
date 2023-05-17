@@ -4,6 +4,7 @@ import { useCart } from "../../context/CartContextProvider";
 import pluss from "../Partners_page/img/header_img/plus-new.svg";
 import minus from "../Partners_page/img/header_img/minus.svg";
 import { calcTotalPrice } from "../../helpers/function";
+import { Link } from "react-router-dom";
 
 export default function CartFull() {
   const {
@@ -70,10 +71,12 @@ export default function CartFull() {
             </div>
           </div>
         ))}
-        <button className="buybtn">
-          Заказать продукты ({getTotalProductCount(cart.products)}) за&nbsp;
-          {calcTotalPrice(cart.products)} KGS
-        </button>
+        <Link to={"/form"}>
+          <button className="buybtn">
+            Заказать продукты ({getTotalProductCount(cart.products)}) за&nbsp;
+            {calcTotalPrice(cart.products)} KGS
+          </button>
+        </Link>
       </div>
     </div>
   );
