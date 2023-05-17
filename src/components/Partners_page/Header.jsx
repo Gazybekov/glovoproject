@@ -74,7 +74,7 @@ const Header = () => {
             className="logoGlovo"
           />
         </Link>
-        <div className="adress">
+        <div className="adress" style={{ width: "15%" }}>
           <p>Добавьте свой адрес</p>
           <img src={arrow} alt="" className="img_arrow" />
         </div>

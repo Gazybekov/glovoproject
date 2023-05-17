@@ -227,6 +227,7 @@ hr {
   justify-content: space-between;
   margin: 0 30px;
   top: 480px;
+  background-color: white;
 }
 .store__page {
   width: 17%;
