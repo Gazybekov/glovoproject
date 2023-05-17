@@ -7,9 +7,8 @@ import PartnersMain from "./components/Partners_page/PartnersMain";
 import EditCardPage from "./components/Product/EditCardPage";
 import CardForm from "./components/Product/CardForm";
 import Register from "./components/Register/Register";
-
+import Comment from "./components/Comment/Comment";
 import Done from "./components/Product/Done";
-import Komment from "./components/Komment/Komment";
 
 const App = () => {
   return (
@@ -22,9 +21,9 @@ const App = () => {
         <Route path="/burgers" element={<Katalog />} />
         <Route path="/edit/:id" element={<EditCardPage />} />
         <Route path="/form" element={<CardForm />} />
-        <Route path="/registr" element={<Register/>} />
+        <Route path="/registr" element={<Register />} />
         <Route path="/done" element={<Done />} />
-        <Route path="/komment" element={<Komment />} />
+        <Route path="/comment" element={<Comment />} />
       </Routes>
     </>
   );

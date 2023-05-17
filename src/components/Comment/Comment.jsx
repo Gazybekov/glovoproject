@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useAuth } from "../../context/AuthContextProvider";
-import "./Komment.css";
+import "./Comment.css";
 
-const Komment = () => {
+const Comment = () => {
   const [messages, setMessages] = useState([]);
   const { email, user } = useAuth();
 
@@ -33,6 +33,7 @@ const Komment = () => {
               </div>
               <div>
                 <h2>{user.email}</h2>
+                <h5>{Date()}</h5>
               </div>
               <div className="content">{message}</div>
             </div>
@@ -52,4 +53,4 @@ const Komment = () => {
   );
 };
 
-export default Komment;
+export default Comment;
