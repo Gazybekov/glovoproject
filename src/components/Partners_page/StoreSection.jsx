@@ -11,7 +11,7 @@ import { ADMIN } from "../../helpers/const";
 import { useAuth } from "../../context/AuthContextProvider";
 
 const StoreSection = () => {
-  const { getProducts, state, searchResult, fetchByParams } = useProducts();
+  const { getProducts, state } = useProducts();
   const location = useLocation();
   const navigate = useNavigate();
 

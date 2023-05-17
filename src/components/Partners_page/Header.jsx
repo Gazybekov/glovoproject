@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style/Header.css";
 import topBannerBackground from "./img/header_img/top-banner-background.svg";
 import arrow from "./img/header_img/white-arrow-png-41944.png";
@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import "../Register/Register.css";
 import { useAuth } from "../../context/AuthContextProvider";
-import { ADMIN } from "../../helpers/const";
+
+Modal.setAppElement("#root");
 
 const Header = () => {
   const {
@@ -107,6 +108,7 @@ const Header = () => {
 
       <Modal
         isOpen={isModalOpen}
+        appElement={document.getElementById("app")}
         onRequestClose={closeModal}
         overlayClassName="custom-overlay"
         className="custom-modal_registr"
@@ -115,7 +117,7 @@ const Header = () => {
         <div className="main_box">
           <div className="box">
             {hasAccount ? (
-              <div>
+              <div id="madal_registration">
                 <div className="box_h2">
                   <h2>Войти в Glovo</h2>
                 </div>
@@ -130,7 +132,7 @@ const Header = () => {
                 </div>
               </div>
             ) : (
-              <div>
+              <div id="madal_registration">
                 <div className="box_h2">
                   <h2>Зарегистрироваться в Glovo</h2>
                 </div>

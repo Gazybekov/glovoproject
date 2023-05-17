@@ -11,6 +11,7 @@ import menu from "./img/header_img/2867922_menu_icon.svg";
 import { useFavorite } from "../../context/FavoriteContextProvider";
 import CardItem from "./CardItem";
 import { ADMIN } from "../../helpers/const";
+Modal.setAppElement("#root");
 
 const HeaderLogIn = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -37,8 +38,7 @@ const HeaderLogIn = () => {
     handleLogout,
     user: { email },
   } = useAuth();
-  const { removeFromFavorites, addToFavorites, favorites, setFavorites } =
-    useFavorite();
+  const { favorites } = useFavorite();
 
   // для модалки
   const savedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -47,7 +47,6 @@ const HeaderLogIn = () => {
     savedFavorites.some((savedItem) => savedItem !== item)
   );
 
-  console.log(savedFavorites);
   return (
     <div>
       <div className="logo_box">
