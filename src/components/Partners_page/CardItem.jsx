@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../context/CartContextProvider";
 import { useProducts } from "../../context/ProductContextProvider";
@@ -18,8 +17,7 @@ const CardItem = ({ item }) => {
 
   const navigate = useNavigate();
 
-  const { removeFromFavorites, addToFavorites, favorites, setFavorites } =
-    useFavorite();
+  const { removeFromFavorites, addToFavorites, favorites } = useFavorite();
 
   const {
     user: { email },

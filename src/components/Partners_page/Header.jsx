@@ -13,7 +13,6 @@ const Header = () => {
   const {
     user: { email },
     password,
-    user,
     isLoggedIn,
     emailError,
     passwordError,
