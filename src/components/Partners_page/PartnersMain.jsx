@@ -18,14 +18,16 @@ const PartnersMain = () => {
   };
 
   return (
-    <div>
-      {user ? <HeaderLogIn /> : <Header />}
+    <>
+      <div>
+        {user ? <HeaderLogIn /> : <Header />}
 
-      <div className="store-wrapper">
-        <StoreSection filters={filters} />
-        {cart.products.length === 0 ? <Cart /> : <CartFull />}
+        <div className="store-wrapper">
+          <StoreSection filters={filters} />
+          {cart.products.length === 0 ? <Cart /> : <CartFull />}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
