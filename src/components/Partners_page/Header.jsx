@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style/Header.css";
 import topBannerBackground from "./img/header_img/top-banner-background.svg";
 import arrow from "./img/header_img/white-arrow-png-41944.png";
@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import "../Register/Register.css";
 import { useAuth } from "../../context/AuthContextProvider";
-import { ADMIN } from "../../helpers/const";
+
+Modal.setAppElement("#root");
 
 const Header = () => {
   const {
@@ -88,45 +89,26 @@ const Header = () => {
       <div className="second-part-of-header">
         <div className="store-info">
           <h1>KFC</h1>
-          {email === ADMIN ? (
-            <div className="info">
-              <div className="scooter_section">
-                <img src={scooter} alt="" />
-                <p>80,00 KGS</p>
-              </div>
-              <div className="rate_section">
-                <img
-                  src="https://res.cloudinary.com/glovoapp/f_auto,q_auto:low/store_ratings/rating_good.png"
-                  alt=""
-                />
-                <span>95%</span>
-                <span>Хорошо</span>
-              </div>
-              <Link to={"/addproducts"}>
-                <button className="btn1">Добавить новый продукт</button>
-              </Link>
+          <div className="info" style={{ width: "22%" }}>
+            <div className="scooter_section" style={{ width: "38%" }}>
+              <img src={scooter} alt="" />
+              <p>80,00 KGS</p>
             </div>
-          ) : (
-            <div className="info" style={{ width: "22%" }}>
-              <div className="scooter_section" style={{ width: "38%" }}>
-                <img src={scooter} alt="" />
-                <p>80,00 KGS</p>
-              </div>
-              <div className="rate_section" style={{ width: "43%" }}>
-                <img
-                  src="https://res.cloudinary.com/glovoapp/f_auto,q_auto:low/store_ratings/rating_good.png"
-                  alt=""
-                />
-                <span>95%</span>
-                <span>Хорошо</span>
-              </div>
+            <div className="rate_section" style={{ width: "43%" }}>
+              <img
+                src="https://res.cloudinary.com/glovoapp/f_auto,q_auto:low/store_ratings/rating_good.png"
+                alt=""
+              />
+              <span>95%</span>
+              <span>Хорошо</span>
             </div>
-          )}
+          </div>
         </div>
       </div>
 
       <Modal
         isOpen={isModalOpen}
+        appElement={document.getElementById("app")}
         onRequestClose={closeModal}
         overlayClassName="custom-overlay"
         className="custom-modal_registr"
@@ -135,7 +117,7 @@ const Header = () => {
         <div className="main_box">
           <div className="box">
             {hasAccount ? (
-              <div>
+              <div id="madal_registration">
                 <div className="box_h2">
                   <h2>Войти в Glovo</h2>
                 </div>
@@ -150,7 +132,7 @@ const Header = () => {
                 </div>
               </div>
             ) : (
-              <div>
+              <div id="madal_registration">
                 <div className="box_h2">
                   <h2>Зарегистрироваться в Glovo</h2>
                 </div>
