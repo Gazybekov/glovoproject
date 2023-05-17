@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { useAuth } from "../../context/AuthContextProvider";
 import "./Komment.css";
 
 const Komment = () => {
   const [messages, setMessages] = useState([]);
+  const { email, user } = useAuth();
+
   const [newMessage, setNewMessage] = useState("");
 
   const handleInputChange = (e) => {
@@ -27,6 +30,9 @@ const Komment = () => {
                   src="https://www.pngall.com/wp-content/uploads/10/Message-Logo-PNG-Photo.png"
                   alt="Avatar"
                 />
+              </div>
+              <div>
+                <h2>{user.email}</h2>
               </div>
               <div className="content">{message}</div>
             </div>

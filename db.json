@@ -576,6 +576,15 @@
       "image": "https://res.cloudinary.com/glovoapp/f_auto,c_fill,dpr_3.0,h_60,w_60,q_auto:low,b_transparent/Products/vojdxh6x2kdubowpyrk1",
       "category": "Other",
       "id": 78
+    },
+    {
+      "image": "",
+      "name": "1234",
+      "price": 1234,
+      "description": "1234",
+      "category": "",
+      "picture": "123",
+      "id": 79
     }
   ]
 }
