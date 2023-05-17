@@ -9,6 +9,7 @@ import { Box, Grid, Pagination } from "@mui/material";
 import { useSearchParams, useLocation, useNavigate } from "react-router-dom";
 import { ADMIN } from "../../helpers/const";
 import { useAuth } from "../../context/AuthContextProvider";
+import Footer from "./Footer";
 
 const StoreSection = () => {
   const { getProducts, state, searchResult, fetchByParams } = useProducts();
@@ -83,80 +84,82 @@ const StoreSection = () => {
 
   return (
     <>
-      <div className="store__page">
-        <div className="square">
-          <img src={square} alt="" />
-          <p>Разделы</p>
-        </div>
-        <div className="filter">
-          <ul>
-            <li>
-              <button onClick={() => handleFilterChange("")}>Все</button>
-            </li>
-            {categories.map((category) => (
-              <li key={category}>
-                <button onClick={() => handleFilterChange(category)}>
-                  {category}
-                </button>
+      <div>
+        <div className="store__page">
+          <div className="square">
+            <img src={square} alt="" />
+            <p>Разделы</p>
+          </div>
+          <div className="filter">
+            <ul>
+              <li>
+                <button onClick={() => handleFilterChange("")}>Все</button>
               </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <div className="store-section">
-        <div className="search-input">
-          <div className="search">
-            <form onSubmit={handleSearchSubmit} style={{ display: "flex" }}>
-              <button type="submit" className="search-input__button">
-                <img src={searchh} alt="" />
-              </button>
-              <input
-                type="text"
-                placeholder="Искать в KFC"
-                className="search-input__field"
-                onChange={(e) => handleSearchChange(e)}
-                value={search}
-              />
-            </form>
+              {categories.map((category) => (
+                <li key={category}>
+                  <button onClick={() => handleFilterChange(category)}>
+                    {category}
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-        {email === ADMIN ? (
-          <Grid item md={9}>
-            <Box
-              sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                my: "2rem",
-                justifyContent: "space-evenly",
-              }}
-            >
-              {currentData().length > 0 ? (
-                currentData().map((product) => (
+        <div className="store-section">
+          <div className="search-input">
+            <div className="search">
+              <form onSubmit={handleSearchSubmit} style={{ display: "flex" }}>
+                <button type="submit" className="search-input__button">
+                  <img src={searchh} alt="" />
+                </button>
+                <input
+                  type="text"
+                  placeholder="Искать в KFC"
+                  className="search-input__field"
+                  onChange={(e) => handleSearchChange(e)}
+                  value={search}
+                />
+              </form>
+            </div>
+          </div>
+          {email === ADMIN ? (
+            <Grid item md={9}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  my: "2rem",
+                  justifyContent: "space-evenly",
+                }}
+              >
+                {currentData().length > 0 ? (
+                  currentData().map((product) => (
+                    <CardItem key={product.id} item={product} />
+                  ))
+                ) : (
+                  <p>No products available</p>
+                )}
+              </Box>
+              <Pagination
+                count={count}
+                page={page}
+                onChange={handleChange}
+                variant="outlined"
+                color="secondary"
+              />
+            </Grid>
+          ) : (
+            <div className="card_wrapper">
+              {filteredProducts.length > 0 ? (
+                filteredProducts.map((product) => (
                   <CardItem key={product.id} item={product} />
                 ))
               ) : (
                 <p>No products available</p>
               )}
-            </Box>
-            <Pagination
-              count={count}
-              page={page}
-              onChange={handleChange}
-              variant="outlined"
-              color="secondary"
-            />
-          </Grid>
-        ) : (
-          <div className="card_wrapper">
-            {filteredProducts.length > 0 ? (
-              filteredProducts.map((product) => (
-                <CardItem key={product.id} item={product} />
-              ))
-            ) : (
-              <p>No products available</p>
-            )}
-          </div>
-        )}
+            </div>
+          )}
+        </div>
       </div>
     </>
   );

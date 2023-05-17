@@ -8,6 +8,7 @@ import { useCart } from "../../context/CartContextProvider";
 import CartFull from "../Cart/CartFull";
 import { useAuth } from "../../context/AuthContextProvider";
 import HeaderLogIn from "../Partners_page/HeaderLogIn";
+import Footer from "./Footer";
 
 const PartnersMain = () => {
   const { cart } = useCart();
@@ -19,14 +20,16 @@ const PartnersMain = () => {
   };
 
   return (
-    <div>
-      {user ? <HeaderLogIn /> : <Header />}
+    <>
+      <div>
+        {user ? <HeaderLogIn /> : <Header />}
 
-      <div className="store-wrapper">
-        <StoreSection filters={filters} />
-        {cart.products.length === 0 ? <Cart /> : <CartFull />}
+        <div className="store-wrapper">
+          <StoreSection filters={filters} />
+          {cart.products.length === 0 ? <Cart /> : <CartFull />}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
