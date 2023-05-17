@@ -89,40 +89,20 @@ const Header = () => {
       <div className="second-part-of-header">
         <div className="store-info">
           <h1>KFC</h1>
-          {email === ADMIN ? (
-            <div className="info">
-              <div className="scooter_section">
-                <img src={scooter} alt="" />
-                <p>80,00 KGS</p>
-              </div>
-              <div className="rate_section">
-                <img
-                  src="https://res.cloudinary.com/glovoapp/f_auto,q_auto:low/store_ratings/rating_good.png"
-                  alt=""
-                />
-                <span>95%</span>
-                <span>Хорошо</span>
-              </div>
-              <Link to={"/addproducts"}>
-                <button>Добавить новый продукт</button>
-              </Link>
+          <div className="info" style={{ width: "22%" }}>
+            <div className="scooter_section" style={{ width: "38%" }}>
+              <img src={scooter} alt="" />
+              <p>80,00 KGS</p>
             </div>
-          ) : (
-            <div className="info" style={{ width: "22%" }}>
-              <div className="scooter_section" style={{ width: "38%" }}>
-                <img src={scooter} alt="" />
-                <p>80,00 KGS</p>
-              </div>
-              <div className="rate_section" style={{ width: "43%" }}>
-                <img
-                  src="https://res.cloudinary.com/glovoapp/f_auto,q_auto:low/store_ratings/rating_good.png"
-                  alt=""
-                />
-                <span>95%</span>
-                <span>Хорошо</span>
-              </div>
+            <div className="rate_section" style={{ width: "43%" }}>
+              <img
+                src="https://res.cloudinary.com/glovoapp/f_auto,q_auto:low/store_ratings/rating_good.png"
+                alt=""
+              />
+              <span>95%</span>
+              <span>Хорошо</span>
             </div>
-          )}
+          </div>
         </div>
       </div>
 

@@ -10,6 +10,7 @@ import Modal from "react-modal";
 import menu from "./img/header_img/2867922_menu_icon.svg";
 import { useFavorite } from "../../context/FavoriteContextProvider";
 import CardItem from "./CardItem";
+import { ADMIN } from "../../helpers/const";
 
 const HeaderLogIn = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,7 +32,11 @@ const HeaderLogIn = () => {
     setIsModalOpenMenu(false);
   };
 
-  const { user, handleLogout } = useAuth();
+  const {
+    user,
+    handleLogout,
+    user: { email },
+  } = useAuth();
   const { removeFromFavorites, addToFavorites, favorites, setFavorites } =
     useFavorite();
 
@@ -90,9 +95,11 @@ const HeaderLogIn = () => {
               <span>95%</span>
               <span>Хорошо</span>
             </div>
-            <Link to={"/addproducts"}>
-              <button>Добавить новый продукт</button>
-            </Link>
+            {email == ADMIN ? (
+              <Link to={"/addproducts"}>
+                <button>Добавить новый продукт</button>
+              </Link>
+            ) : null}
           </div>
         </div>
       </div>
