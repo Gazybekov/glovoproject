@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "../Partners_page/style/Header.css";
 import { useCart } from "../../context/CartContextProvider";
 import pluss from "../Partners_page/img/header_img/plus-new.svg";
 import minus from "../Partners_page/img/header_img/minus.svg";
-import { calcTotalPrice } from "../../helpers/function";
 import { Link } from "react-router-dom";
 
 export default function CartFull() {
@@ -12,11 +11,10 @@ export default function CartFull() {
     cart,
     changeProductCount,
     deleteCartProduct,
-    addProductToCart,
     calcTotalPrice,
   } = useCart();
 
-  React.useEffect(() => {
+  useEffect(() => {
     getCart();
   }, []);
 

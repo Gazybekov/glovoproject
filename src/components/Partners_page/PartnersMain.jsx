@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import StoreSection from "./StoreSection";
 import Header from "../Partners_page/Header";
 import "./style/Header.css";
@@ -11,7 +10,7 @@ import HeaderLogIn from "../Partners_page/HeaderLogIn";
 
 const PartnersMain = () => {
   const { cart } = useCart();
-  const { email, handleLogout, isLoggedIn, handleLogin, user } = useAuth(); // Используем isLoggedIn из контекста AuthContextProvider
+  const { user } = useAuth(); // Используем isLoggedIn из контекста AuthContextProvider
   const [filters, setFilters] = useState({ category: "all" });
 
   const handleFilterChange = (category) => {

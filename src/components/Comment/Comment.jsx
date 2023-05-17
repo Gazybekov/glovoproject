@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useAuth } from "../../context/AuthContextProvider";
 import "./Comment.css";
 
 const Comment = () => {
   const [messages, setMessages] = useState([]);
   const { email, user } = useAuth();
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("user1")) || [];
+    localStorage.setItem("user1", JSON.stringify(data));
+  }, []);
 
   const [newMessage, setNewMessage] = useState("");
 
@@ -14,8 +19,14 @@ const Comment = () => {
 
   const handleSendMessage = () => {
     if (newMessage.trim() !== "") {
-      setMessages([...messages, newMessage]);
+      const updatedMessages = [...messages, newMessage];
+      setMessages(updatedMessages);
       setNewMessage("");
+
+      const obj = { user1: updatedMessages };
+      const data = JSON.parse(localStorage.getItem("user1"));
+      data.push(obj);
+      localStorage.setItem("user1", JSON.stringify(data));
     }
   };
 

@@ -1,4 +1,3 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
 import "./EditCard.css";
 import kfc from "../../assets/kfc.png";
 
